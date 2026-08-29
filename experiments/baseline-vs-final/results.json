@@ -1,0 +1,655 @@
+{
+  "pharmacy-management-system": {
+    "baseline": {
+      "scenarioId": "pharmacy-management-system",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\pharmacy-management-system.json",
+      "generatedAt": "2026-08-29T18:34:08.188Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "score": 67,
+        "foundRequirements": [
+          "REQ-001",
+          "REQ-002",
+          "REQ-003",
+          "REQ-005",
+          "REQ-006",
+          "REQ-009"
+        ],
+        "missedRequirements": [
+          "REQ-004",
+          "REQ-007",
+          "REQ-008"
+        ],
+        "unsupportedAssumptions": [],
+        "feedback": "The developer did a solid job uncovering most of the core needs—user roles, multi‑branch support, inventory/expiry tracking, payment and reconciliation flows, reporting dashboards, and integration constraints. However, they didn’t probe the prescription-specific details (refill rules, controlled‑substance handling), the supplier/purchasing workflow, or the patient/customer record requirements. Adding targeted questions around those areas would give a more complete picture of the pharmacy’s critical processes."
+      },
+      "modelUsed": "openai/gpt-oss-120b"
+    },
+    "final": {
+      "scenarioId": "pharmacy-management-system",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\pharmacy-6-question.json",
+      "generatedAt": "2026-08-29T19:11:46.542Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "evaluationMode": "llm",
+        "coverageScore": 72,
+        "requirements": [
+          {
+            "id": "REQ-001",
+            "status": "DISCOVERED",
+            "evidence": "DEVELOPER: Who is allowed to manage prescriptions and dispense medicines?"
+          },
+          {
+            "id": "REQ-002",
+            "status": "DISCOVERED",
+            "evidence": "DEVELOPER: Do you operate more than one pharmacy branch?"
+          },
+          {
+            "id": "REQ-003",
+            "status": "DISCOVERED",
+            "evidence": "DEVELOPER: How do you track stock levels and expiry dates?"
+          },
+          {
+            "id": "REQ-004",
+            "status": "DISCOVERED",
+            "evidence": "DEVELOPER: What happens when a prescription is refilled or needs review?"
+          },
+          {
+            "id": "REQ-005",
+            "status": "DISCOVERED",
+            "evidence": "DEVELOPER: How do customers pay and how do you reconcile sales at the end of the day?"
+          },
+          {
+            "id": "REQ-006",
+            "status": "DISCOVERED",
+            "evidence": "DEVELOPER: Do you need reporting for sales, inventory, or branch performance?"
+          },
+          {
+            "id": "REQ-007",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-008",
+            "status": "PARTIALLY_DISCOVERED",
+            "evidence": "CLIENT: ...checks the refill eligibility—expiry, remaining refills, any alerts for drug interactions or patient history."
+          },
+          {
+            "id": "REQ-009",
+            "status": "MISSED",
+            "evidence": null
+          }
+        ],
+        "unsupportedAssumptions": [],
+        "questionQuality": {
+          "score": 85,
+          "notes": "The developer asked clear, highly targeted, domain-specific open questions that successfully uncovered role permissions, branch scaling, expiry tracking, prescription workflows, payments/reconciliation, and reporting needs."
+        },
+        "feedback": "Great job asking specific, high-value questions around core pharmacy workflows and role permissions. To achieve complete discovery, make sure to also ask about supplier procurement workflows, dedicated patient record/reminder management, and operational/technical constraints like legacy software integrations and hardware environment."
+      }
+    }
+  },
+  "restaurant-pos": {
+    "baseline": {
+      "scenarioId": "restaurant-pos",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\restaurant-pos.json",
+      "generatedAt": "2026-08-29T22:04:14.312Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "score": 75,
+        "foundRequirements": [
+          "REQ-001: Role-based staff access",
+          "REQ-002: Multi-location operations",
+          "REQ-003: Menu and inventory tracking",
+          "REQ-004: Order flow and kitchen handoff",
+          "REQ-005: Payment and reconciliation",
+          "REQ-006: Reporting and operational dashboards",
+          "REQ-009: Operational constraints and integrations"
+        ],
+        "missedRequirements": [
+          "REQ-007: Supplier and purchasing workflow",
+          "REQ-008: Customer and loyalty retention needs"
+        ],
+        "unsupportedAssumptions": [],
+        "feedback": "The developer did a thorough job covering most of the critical operational requirements. They successfully identified role-based permissions, multi-location challenges, inventory tracking issues, daily order and kitchen workflows, payment reconciliation, management reporting, and integration constraints with existing tools (POS/accounting). However, the developer missed exploring supplier/purchasing workflows and customer loyalty/retention needs, both of which are part of the requirement matrix."
+      },
+      "modelUsed": "gemini-3.5-flash-lite"
+    },
+    "final": {
+      "scenarioId": "restaurant-pos",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\restaurant-pos.json",
+      "generatedAt": "2026-08-29T22:04:38.065Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "evaluationMode": "llm",
+        "coverageScore": 89,
+        "requirements": [
+          {
+            "id": "REQ-001",
+            "status": "DISCOVERED",
+            "evidence": "I need everyone locked into their own specific roles... cashiers handling the register, floor staff taking orders, shift managers..."
+          },
+          {
+            "id": "REQ-002",
+            "status": "DISCOVERED",
+            "evidence": "We currently have two locations running, and we're looking to open a third later this year."
+          },
+          {
+            "id": "REQ-003",
+            "status": "DISCOVERED",
+            "evidence": "Right now it's a total mess of spreadsheets and manual counts at the end of the week, which means we're constantly finding out about missing stock..."
+          },
+          {
+            "id": "REQ-004",
+            "status": "DISCOVERED",
+            "evidence": "front-of-house taking orders, kitchen firing tickets, and cashiers handling payments right through the midday peak."
+          },
+          {
+            "id": "REQ-005",
+            "status": "DISCOVERED",
+            "evidence": "Right now, cashiers take payments at the register using a mix of cash, cards, and sometimes digital wallets... pull the Z-reports, count the physical cash..."
+          },
+          {
+            "id": "REQ-006",
+            "status": "DISCOVERED",
+            "evidence": "I need to be able to see real-time sales and cash drawer totals for both locations from my phone... clean breakdown of what actually sold, who handled what..."
+          },
+          {
+            "id": "REQ-007",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-008",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-009",
+            "status": "DISCOVERED",
+            "evidence": "Whatever we bring in needs to connect cleanly with our payment terminals... and it has to export data into our accounting software..."
+          }
+        ],
+        "unsupportedAssumptions": [],
+        "questionQuality": {
+          "score": 90,
+          "notes": "The developer asks targeted, high-impact questions covering roles, multi-location operations, inventory, workflows, payments, reporting, and integrations."
+        },
+        "feedback": "Great job uncovering core operational workflows, multi-location plans, and system integrations. To improve further, ensure you also probe into supplier purchasing workflows and customer loyalty/retention requirements."
+      }
+    }
+  },
+  "gym-management": {
+    "baseline": {
+      "scenarioId": "gym-management",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\gym-management.json",
+      "generatedAt": "2026-08-29T22:05:02.750Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "score": 85,
+        "foundRequirements": [
+          "REQ-001: Member and access management",
+          "REQ-002: Class scheduling and attendance tracking",
+          "REQ-004: Billing, renewals, and payment handling",
+          "REQ-005: Check-in and facility access workflows",
+          "REQ-006: Reporting and performance dashboards",
+          "REQ-008: Staff coordination and operational realities",
+          "REQ-009: Integration needs with payment and CRM tools"
+        ],
+        "missedRequirements": [
+          "REQ-003: Equipment and facility usage",
+          "REQ-007: Marketing and retention workflows"
+        ],
+        "unsupportedAssumptions": [],
+        "feedback": "The developer did a thorough job uncovering the core business requirements, particularly around user roles, check-in workflows, billing pain points, reporting needs, and payment integrations. They successfully captured the chaotic day-to-day realities of the front desk and staff coordination. However, they completely missed asking about equipment/facility usage (REQ-003) and marketing/retention workflows (REQ-007), which were absent from the conversation."
+      },
+      "modelUsed": "gemini-3.5-flash-lite"
+    },
+    "final": {
+      "scenarioId": "gym-management",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\gym-management.json",
+      "generatedAt": "2026-08-29T22:05:28.877Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "evaluationMode": "llm",
+        "coverageScore": 100,
+        "requirements": [
+          {
+            "id": "REQ-001",
+            "status": "DISCOVERED",
+            "evidence": "We need something to manage members, classes... front desk staff handling check-ins, the coaches running classes, and me and my partner managing the memberships, billing..."
+          },
+          {
+            "id": "REQ-002",
+            "status": "DISCOVERED",
+            "evidence": "People sign up or change their minds about classes... coaches start showing up for their classes and usually ask who's booked in..."
+          },
+          {
+            "id": "REQ-003",
+            "status": "DISCOVERED",
+            "evidence": "Right now it's a total mess of Google Sheets, paper signup forms, and a notebook we keep behind the front desk for inventory, records, or data."
+          },
+          {
+            "id": "REQ-004",
+            "status": "DISCOVERED",
+            "evidence": "deal with drop-ins, people trying to freeze or cancel their memberships over email, and manually processing payments that inevitably fail or get missed."
+          },
+          {
+            "id": "REQ-005",
+            "status": "DISCOVERED",
+            "evidence": "Doors open early with the morning crew scanning in, and whoever is at the front desk has to frantically cross-reference our messy spreadsheet to make sure people's dues are actually paid up."
+          },
+          {
+            "id": "REQ-006",
+            "status": "DISCOVERED",
+            "evidence": "I just need to know at a glance who's actually paid, who's falling behind on their dues, and how many people are showing up to classes... quick, clean summary of total revenue and active members"
+          },
+          {
+            "id": "REQ-007",
+            "status": "DISCOVERED",
+            "evidence": "Throughout the day we're dealing with drop-ins, people trying to freeze or cancel their memberships over email... standard email for reaching out to members"
+          },
+          {
+            "id": "REQ-008",
+            "status": "DISCOVERED",
+            "evidence": "During peak hours in the evening, the front desk gets swamped trying to check people in manually while new folks are waiting to join."
+          },
+          {
+            "id": "REQ-009",
+            "status": "DISCOVERED",
+            "evidence": "We don't use much right now besides that basic credit card terminal at the front desk, so it would be great if whatever you build can hook right into that or handle payments directly"
+          }
+        ],
+        "unsupportedAssumptions": [],
+        "questionQuality": {
+          "score": 95,
+          "notes": "The developer asks targeted, highly relevant questions covering user roles, operational workflows, pain points, daily realities, payment handling, reporting, and integrations."
+        },
+        "feedback": "Excellent discovery process. The developer systematically uncovered user roles, operational bottlenecks during peak hours, current payment workflows, reporting needs, and system integration requirements without making unsupported assumptions."
+      }
+    }
+  },
+  "hospital-appointment-system": {
+    "baseline": {
+      "scenarioId": "hospital-appointment-system",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\hospital-appointment-system.json",
+      "generatedAt": "2026-08-29T22:05:57.139Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "score": 85,
+        "foundRequirements": [
+          "REQ-001: Role-based clinical access and permissions",
+          "REQ-002: Patient records and appointment history",
+          "REQ-003: Scheduling and resource allocation",
+          "REQ-004: Check-in and triage workflow",
+          "REQ-005: Follow-up and reminders",
+          "REQ-006: Reporting and operational visibility",
+          "REQ-007: Insurance and billing coordination",
+          "REQ-009: Integration with existing hospital systems"
+        ],
+        "missedRequirements": [
+          "REQ-008: Compliance, privacy, and audit requirements"
+        ],
+        "unsupportedAssumptions": [],
+        "feedback": "The developer conducted a thorough requirements-discovery conversation, successfully uncovering almost all of the core requirements from the matrix—covering role-based access, patient records, scheduling, check-in/triage, reminders, reporting, billing/payments, and system integrations. The only notable omission was a direct inquiry regarding compliance, privacy, and audit requirements (REQ-008), which is critical for healthcare systems handling sensitive patient data. Overall, the questioning strategy was effective and captured the majority of the operational and technical needs."
+      },
+      "modelUsed": "gemini-3.5-flash-lite"
+    },
+    "final": {
+      "scenarioId": "hospital-appointment-system",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\hospital-appointment-system.json",
+      "generatedAt": "2026-08-29T22:06:33.444Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "evaluationMode": "llm",
+        "coverageScore": 89,
+        "requirements": [
+          {
+            "id": "REQ-001",
+            "status": "DISCOVERED",
+            "evidence": "Everyone has different permissions, so we need to make sure staff only see what is relevant to their specific role."
+          },
+          {
+            "id": "REQ-002",
+            "status": "DISCOVERED",
+            "evidence": "Patient history and appointment data often don't sync properly when someone visits a different location, leading to duplicate files and confusion."
+          },
+          {
+            "id": "REQ-003",
+            "status": "DISCOVERED",
+            "evidence": "The day usually starts with front desk staff reviewing the schedule... a bottleneck in one area tends to back up the entire clinic."
+          },
+          {
+            "id": "REQ-004",
+            "status": "DISCOVERED",
+            "evidence": "Once a patient is triaged, the doctor handles the consultation..."
+          },
+          {
+            "id": "REQ-005",
+            "status": "DISCOVERED",
+            "evidence": "we rely on standard email and SMS gateways for appointment reminders"
+          },
+          {
+            "id": "REQ-006",
+            "status": "DISCOVERED",
+            "evidence": "I need clear visibility into daily patient volume, wait times, and revenue reconciliation across all our branches"
+          },
+          {
+            "id": "REQ-007",
+            "status": "DISCOVERED",
+            "evidence": "Right now, front desk cashiers handle everything from basic consultation fees to prescription sales..."
+          },
+          {
+            "id": "REQ-008",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-009",
+            "status": "DISCOVERED",
+            "evidence": "We still have a legacy electronic medical record system at two of our older branches that we cannot completely turn off yet..."
+          }
+        ],
+        "unsupportedAssumptions": [],
+        "questionQuality": {
+          "score": 90,
+          "notes": "The developer asked strong, targeted questions covering user roles, workflows, inventory, multi-location operations, payments, reporting, and integrations. However, specific compliance and audit trail questions (REQ-008) were missed."
+        },
+        "feedback": "Great job uncovering core clinical workflows, roles, multi-branch challenges, and legacy integrations. To complete the discovery phase, ensure you explicitly ask about regulatory compliance, data privacy, and audit trail requirements for sensitive patient records."
+      }
+    }
+  },
+  "freelance-marketplace": {
+    "baseline": {
+      "scenarioId": "freelance-marketplace",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\freelance-marketplace.json",
+      "generatedAt": "2026-08-29T22:06:55.762Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "score": 45,
+        "foundRequirements": [
+          "REQ-001: User roles and trust management",
+          "REQ-006: Reporting and marketplace visibility",
+          "REQ-008: Operational constraints and platform integrations"
+        ],
+        "missedRequirements": [
+          "REQ-002: Project posting and matching workflow",
+          "REQ-003: Contract, milestone, and delivery workflow",
+          "REQ-004: Payment, escrow, and dispute handling",
+          "REQ-005: Reputation and profile management",
+          "REQ-007: Support and resolution workflow",
+          "REQ-009: Messaging and coordination workflow"
+        ],
+        "unsupportedAssumptions": [
+          "The developer pivoted the conversation completely toward pharmacy management, inventory tracking, and POS systems, which did not align with the client's initial statement about connecting clients with freelancers."
+        ],
+        "feedback": "The developer successfully identified user roles and reporting/integration needs, but completely derailed the requirement-discovery process. After the client mentioned connecting clients with freelancers, the developer asked questions entirely suited for a pharmacy inventory and retail POS system, completely missing the core workflow, project delivery, escrow, messaging, and reputation features required for a freelance marketplace."
+      },
+      "modelUsed": "gemini-3.5-flash-lite"
+    },
+    "final": {
+      "scenarioId": "freelance-marketplace",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\freelance-marketplace.json",
+      "generatedAt": "2026-08-29T22:07:19.525Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "evaluationMode": "llm",
+        "coverageScore": 33,
+        "requirements": [
+          {
+            "id": "REQ-001",
+            "status": "DISCOVERED",
+            "evidence": "We have a few distinct roles involved... starting with the clients who post the work and the freelancers who actually execute it. On top of that, we need oversight for administrators to manage disputes, verify profiles..."
+          },
+          {
+            "id": "REQ-002",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-003",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-004",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-005",
+            "status": "PARTIALLY_DISCOVERED",
+            "evidence": "verify profiles, and keep the marketplace trustworthy overall"
+          },
+          {
+            "id": "REQ-006",
+            "status": "DISCOVERED",
+            "evidence": "I really need visibility into sales trends, stock movement, and overall branch performance so I can make practical management decisions."
+          },
+          {
+            "id": "REQ-007",
+            "status": "DISCOVERED",
+            "evidence": "administrators to manage disputes"
+          },
+          {
+            "id": "REQ-008",
+            "status": "DISCOVERED",
+            "evidence": "Right now we have a mix of local POS terminals at the counters and whatever accounting software our bookkeeper uses..."
+          },
+          {
+            "id": "REQ-009",
+            "status": "MISSED",
+            "evidence": null
+          }
+        ],
+        "unsupportedAssumptions": [
+          {
+            "assumption": "Assumed the business was a pharmacy chain rather than a freelance marketplace",
+            "explanation": "The developer's questions pivoted entirely to pharmacy branches, inventory, and prescriptions, completely straying from the original freelance marketplace context established by the client."
+          }
+        ],
+        "questionQuality": {
+          "score": 40,
+          "notes": "The developer completely lost track of the domain context, switching the conversation from a freelance marketplace to a pharmacy retail chain management system halfway through."
+        },
+        "feedback": "Maintain focus on the actual domain being discussed. The developer derailed the discovery process by asking irrelevant questions about pharmacy inventory and POS terminals instead of exploring core freelance marketplace mechanics like project matching, proposals, contracts, milestones, escrow, and messaging."
+      }
+    }
+  },
+  "multi-branch-retail": {
+    "baseline": {
+      "scenarioId": "multi-branch-retail",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\multi-branch-retail.json",
+      "generatedAt": "2026-08-29T22:07:46.255Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "score": 70,
+        "foundRequirements": [
+          "REQ-001: Role-based branch access and permissions",
+          "REQ-002: Multi-branch hierarchy and central oversight",
+          "REQ-003: Inventory visibility across locations",
+          "REQ-005: Point-of-sale and reconciliation flow",
+          "REQ-006: Branch-level reporting and KPI tracking",
+          "REQ-009: System integration with current retail tools"
+        ],
+        "missedRequirements": [
+          "REQ-004: Pricing and promotion management",
+          "REQ-007: Supplier and purchasing coordination",
+          "REQ-008: Staffing and training complexity",
+          "REQ-010: Customer and loyalty retention workflow"
+        ],
+        "unsupportedAssumptions": [],
+        "feedback": "The developer did a thorough job uncovering foundational operational requirements, successfully identifying needs around user roles, multi-branch management, inventory visibility, daily point-of-sale reconciliation, branch-level reporting, and systems integration. However, the conversation missed exploring pricing/promotions, supplier/purchasing coordination, staffing/training constraints, and customer loyalty retention workflows."
+      },
+      "modelUsed": "gemini-3.5-flash-lite"
+    },
+    "final": {
+      "scenarioId": "multi-branch-retail",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\multi-branch-retail.json",
+      "generatedAt": "2026-08-29T22:08:12.677Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "evaluationMode": "llm",
+        "coverageScore": 80,
+        "requirements": [
+          {
+            "id": "REQ-001",
+            "status": "DISCOVERED",
+            "evidence": "We have a mix of roles across the branches like cashiers, floor staff, branch managers, and administrators at head office."
+          },
+          {
+            "id": "REQ-002",
+            "status": "DISCOVERED",
+            "evidence": "We have several branches now and we're expanding fast... Each location has its own local team, but head office is struggling to get a clear, unified view."
+          },
+          {
+            "id": "REQ-003",
+            "status": "DISCOVERED",
+            "evidence": "Right now, each branch tracks things a bit differently, using a mix of local spreadsheets and fragmented point-of-sale tools. That leads to constant stock discrepancies."
+          },
+          {
+            "id": "REQ-004",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-005",
+            "status": "DISCOVERED",
+            "evidence": "At closing, each branch runs an end-of-day reconciliation to match cash and digital payments against sales"
+          },
+          {
+            "id": "REQ-006",
+            "status": "DISCOVERED",
+            "evidence": "I need head office to see real-time sales, inventory levels, and cash flow for every branch without having to wait for end-of-day emails."
+          },
+          {
+            "id": "REQ-007",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-008",
+            "status": "PARTIALLY_DISCOVERED",
+            "evidence": "Whatever comes in needs to integrate smoothly with those so we aren't forcing our staff to learn a completely foreign setup"
+          },
+          {
+            "id": "REQ-009",
+            "status": "DISCOVERED",
+            "evidence": "Right now we're using some basic point-of-sale terminals in the stores and standard accounting software at head office, but they don't talk to each other properly."
+          },
+          {
+            "id": "REQ-010",
+            "status": "PARTIALLY_DISCOVERED",
+            "evidence": "Throughout the day, the floor and cashiers handle retail sales and customer transactions, while prescriptions and specific product requests come through"
+          }
+        ],
+        "unsupportedAssumptions": [],
+        "questionQuality": {
+          "score": 85,
+          "notes": "The developer asked targeted, high-impact questions covering user roles, multi-branch operations, inventory tracking, workflows, reconciliation, reporting, and integrations. However, they missed probing deeper into pricing/promotions and supplier purchasing coordination."
+        },
+        "feedback": "Great job uncovering core operational workflows, multi-branch challenges, and system integration points. To achieve complete coverage, make sure to ask about supplier purchasing and pricing/promotion management in future sessions."
+      }
+    },
+    "weakBaseline": {
+      "scenarioId": "multi-branch-retail",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\multi-branch-retail-weak.json",
+      "generatedAt": "2026-08-29T22:08:24.230Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "score": 0,
+        "foundRequirements": [],
+        "missedRequirements": [
+          "REQ-001",
+          "REQ-002",
+          "REQ-003",
+          "REQ-004",
+          "REQ-005",
+          "REQ-006",
+          "REQ-007",
+          "REQ-008",
+          "REQ-009",
+          "REQ-010"
+        ],
+        "unsupportedAssumptions": [
+          "Assumed the conversation was primarily about UI styling rather than core business workflows."
+        ],
+        "feedback": "The requirement-discovery conversation was cut short due to an error state from the client ('All Groq models failed due to transient availability issues'). As a result, the developer failed to explore any of the critical business requirements such as role-based access, multi-branch management, inventory visibility, POS reconciliation, reporting, supplier coordination, or system integrations. Instead, the conversation prematurely focused on UI design preferences."
+      },
+      "modelUsed": "gemini-3.5-flash-lite"
+    },
+    "weakFinal": {
+      "scenarioId": "multi-branch-retail",
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\multi-branch-retail-weak.json",
+      "generatedAt": "2026-08-29T22:08:47.493Z",
+      "evaluationMode": "llm",
+      "rawResult": {
+        "evaluationMode": "llm",
+        "coverageScore": 0,
+        "requirements": [
+          {
+            "id": "REQ-001",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-002",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-003",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-004",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-005",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-006",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-007",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-008",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-009",
+            "status": "MISSED",
+            "evidence": null
+          },
+          {
+            "id": "REQ-010",
+            "status": "MISSED",
+            "evidence": null
+          }
+        ],
+        "unsupportedAssumptions": [
+          {
+            "assumption": "The application should be modern, simple, and easy.",
+            "explanation": "The developer assumed the primary focus should be on UI appearance rather than investigating business complexities, multi-branch needs, inventory management, or regulatory constraints inherent to a pharmacy business."
+          }
+        ],
+        "questionQuality": {
+          "score": 10,
+          "notes": "The developer completely bypassed critical business requirements such as inventory, multi-branch operations, and regulatory/role permissions, focusing prematurely and superficially on UI styling."
+        },
+        "feedback": "Stop focusing on superficial UI questions early in the conversation. Prioritize discovering core business requirements, multi-branch operations, inventory tracking, and role-based permissions before discussing visual design."
+      }
+    }
+  }
+}

@@ -1,0 +1,276 @@
+﻿{
+    "sessionId":  "session-1787996648653-bb43f4",
+    "reply":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+    "transcript":  [
+                       {
+                           "role":  "client",
+                           "message":  "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+                           "timestamp":  "2026-08-29T09:44:08.653Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Who is allowed to manage prescriptions and dispense medicines?",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       }
+                   ]
+}
+{
+    "sessionId":  "session-1787996648653-bb43f4",
+    "reply":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+    "transcript":  [
+                       {
+                           "role":  "client",
+                           "message":  "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+                           "timestamp":  "2026-08-29T09:44:08.653Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Who is allowed to manage prescriptions and dispense medicines?",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Do you operate more than one pharmacy branch?",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       }
+                   ]
+}
+{
+    "sessionId":  "session-1787996648653-bb43f4",
+    "reply":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+    "transcript":  [
+                       {
+                           "role":  "client",
+                           "message":  "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+                           "timestamp":  "2026-08-29T09:44:08.653Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Who is allowed to manage prescriptions and dispense medicines?",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Do you operate more than one pharmacy branch?",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "How do you track stock levels and expiry dates?",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       }
+                   ]
+}
+{
+    "sessionId":  "session-1787996648653-bb43f4",
+    "reply":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+    "transcript":  [
+                       {
+                           "role":  "client",
+                           "message":  "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+                           "timestamp":  "2026-08-29T09:44:08.653Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Who is allowed to manage prescriptions and dispense medicines?",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Do you operate more than one pharmacy branch?",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "How do you track stock levels and expiry dates?",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "What happens when a prescription is refilled or needs review?",
+                           "timestamp":  "2026-08-29T09:44:09.841Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.841Z"
+                       }
+                   ]
+}
+{
+    "sessionId":  "session-1787996648653-bb43f4",
+    "reply":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+    "transcript":  [
+                       {
+                           "role":  "client",
+                           "message":  "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+                           "timestamp":  "2026-08-29T09:44:08.653Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Who is allowed to manage prescriptions and dispense medicines?",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Do you operate more than one pharmacy branch?",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "How do you track stock levels and expiry dates?",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "What happens when a prescription is refilled or needs review?",
+                           "timestamp":  "2026-08-29T09:44:09.841Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.841Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "How do customers pay and how do you reconcile sales at the end of the day?",
+                           "timestamp":  "2026-08-29T09:44:09.975Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.974Z"
+                       }
+                   ]
+}
+{
+    "sessionId":  "session-1787996648653-bb43f4",
+    "reply":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+    "transcript":  [
+                       {
+                           "role":  "client",
+                           "message":  "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+                           "timestamp":  "2026-08-29T09:44:08.653Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Who is allowed to manage prescriptions and dispense medicines?",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.369Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Do you operate more than one pharmacy branch?",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.541Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "How do you track stock levels and expiry dates?",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.677Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "What happens when a prescription is refilled or needs review?",
+                           "timestamp":  "2026-08-29T09:44:09.841Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.841Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "How do customers pay and how do you reconcile sales at the end of the day?",
+                           "timestamp":  "2026-08-29T09:44:09.975Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:09.974Z"
+                       },
+                       {
+                           "role":  "developer",
+                           "message":  "Do you need reporting for sales, inventory, or branch performance?",
+                           "timestamp":  "2026-08-29T09:44:10.125Z"
+                       },
+                       {
+                           "role":  "client",
+                           "message":  "Groq request failed: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}",
+                           "timestamp":  "2026-08-29T09:44:10.125Z"
+                       }
+                   ]
+}

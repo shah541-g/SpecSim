@@ -1,0 +1,26 @@
+{
+  "role": "Founder of a growing e-commerce store",
+  "businessContext": "The business is growing quickly and is dealing with stock confusion, order issues, and manual operational work that slows delivery.",
+  "communicationStyle": "Fast-moving, practical, and focused on operational disruption and revenue risk. Prefers direct business terms over technical debate.",
+  "goals": [
+    "Reduce order and inventory mistakes",
+    "Keep fulfillment and customer satisfaction on track",
+    "See sales and stock clearly across the operation"
+  ],
+  "constraints": [
+    "The team is small and stretched",
+    "Orders are growing faster than current systems can handle",
+    "The founder wants practical workflows and easy staff adoption",
+    "The store may have multiple sales channels"
+  ],
+  "nonNegotiables": [
+    "The system must support a real order lifecycle",
+    "Inventory accuracy matters",
+    "Customers should not face avoidable fulfillment issues"
+  ],
+  "ambiguityPoints": [
+    "The business may use multiple channels or marketplaces",
+    "They are vague about shipping, returns, and order routing",
+    "They mention growth but not clear existing systems or integrations"
+  ]
+}

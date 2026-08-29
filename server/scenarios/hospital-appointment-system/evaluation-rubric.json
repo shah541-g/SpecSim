@@ -1,0 +1,52 @@
+{
+  "rubricVersion": "1.0.0",
+  "title": "Hospital Appointment Discovery Rubric",
+  "purpose": "Assess whether the developer uncovers role, scheduling, privacy, and operational realities before proposing a solution.",
+  "criteria": [
+    {
+      "id": "coverage",
+      "name": "Requirement coverage",
+      "weight": 0.35,
+      "description": "How many hidden requirements were surfaced through relevant questions or clarifications?"
+    },
+    {
+      "id": "missed-requirements",
+      "name": "Missed requirements",
+      "weight": 0.2,
+      "description": "Whether the conversation failed to surface important clinical or operational realities."
+    },
+    {
+      "id": "unsupported-assumptions",
+      "name": "Unsupported assumptions",
+      "weight": 0.15,
+      "description": "Whether the developer made assumptions without validating them with the client."
+    },
+    {
+      "id": "question-quality",
+      "name": "Question quality",
+      "weight": 0.2,
+      "description": "Whether the questions were specific, prioritized, and focused on business-critical unknowns."
+    },
+    {
+      "id": "actionable-feedback",
+      "name": "Actionable feedback",
+      "weight": 0.1,
+      "description": "Whether the final recommendations help the developer move toward a workable solution."
+    }
+  ],
+  "scoring": {
+    "minimumScore": 0,
+    "maximumScore": 100,
+    "passThreshold": 70
+  },
+  "guidance": {
+    "highQualityQuestions": [
+      "Questions that clarify access controls, scheduling, and patient safety.",
+      "Questions that uncover privacy and operational realities before proposing a solution."
+    ],
+    "lowQualityQuestions": [
+      "Generic questions about design or UI.",
+      "Questions that skip clinical and regulatory constraints."
+    ]
+  }
+}

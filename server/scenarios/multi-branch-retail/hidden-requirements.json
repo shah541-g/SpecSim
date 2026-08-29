@@ -1,0 +1,122 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Role-based branch access and permissions",
+    "description": "The system must support different permissions for branch managers, cashiers, stock staff, administrators, and central operations so actions are controlled at the right level.",
+    "category": "users-and-roles",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks who can approve actions, manage stock, or reconcile cash at branch level.",
+      "Developer asks how permissions differ between staff roles.",
+      "Developer mentions branch managers, cashiers, or admin oversight."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Multi-branch hierarchy and central oversight",
+    "description": "The platform must support multiple retail branches with central reporting and consistent controls while allowing branch-level operational differences where needed.",
+    "category": "branches-and-operations",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about multiple branches or regional oversight.",
+      "Developer mentions branch comparison or centralized management.",
+      "Developer discusses shared controls and local variation."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Inventory visibility across locations",
+    "description": "The system must provide stock visibility across branches, including low-stock triggers, transfer requests, and branch-specific stock movement.",
+    "category": "inventory",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about stock across branches or transfers between locations.",
+      "Developer mentions branch inventory visibility.",
+      "Developer discusses low-stock alerts or transfer planning."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Pricing and promotion management",
+    "description": "The retailer needs a way to manage pricing rules, promotions, and markdowns consistently while still respecting local branch differences where required.",
+    "category": "pricing",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about pricing rules or promotions.",
+      "Developer mentions price changes or markdown controls.",
+      "Developer discusses variation by branch or campaign."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Point-of-sale and reconciliation flow",
+    "description": "The system must handle sales transactions, payment types, refunds, and end-of-day reconciliation so each branch closes accurately.",
+    "category": "payments",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks how sales are recorded and reconciled.",
+      "Developer mentions cash drawers, refunds, or daily close.",
+      "Developer discusses payment methods or branch reconciliation."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Branch-level reporting and KPI tracking",
+    "description": "The company needs dashboards and reports for sales, stock movement, margin, and branch performance to support operational decisions.",
+    "category": "reporting",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about dashboards, sales trends, or branch performance.",
+      "Developer mentions stock movement or margin analysis.",
+      "Developer discusses KPI reporting across locations."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Supplier and purchasing coordination",
+    "description": "The business needs supplier records, purchase orders, and reorder planning so branches can stay stocked without excess waste or delays.",
+    "category": "suppliers-and-purchasing",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about suppliers, purchase orders, or restocking.",
+      "Developer mentions reorder triggers or supplier cost control.",
+      "Developer discusses branch purchasing coordination."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Staffing and training complexity",
+    "description": "The system must fit the realities of a growing multi-branch retail operation, including branch-specific staff availability, training burden, and adoption issues.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about staff onboarding or branch training.",
+      "Developer mentions adoption problems or process consistency.",
+      "Developer discusses operational constraints in a multi-site environment."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "System integration with current retail tools",
+    "description": "The business likely has existing POS, accounting, or ERP tools that must connect cleanly with the new system to avoid duplicate work and operational breaks.",
+    "category": "integrations",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about integration with accounting or POS tools.",
+      "Developer mentions existing systems or data migration.",
+      "Developer discusses compatibility and operational handoffs."
+    ]
+  },
+  {
+    "id": "REQ-010",
+    "name": "Customer and loyalty retention workflow",
+    "description": "The business may need customer records and loyalty tracking to support repeat shopping and targeted offers without disrupting branch operations.",
+    "category": "customer-records",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about customer records, repeat purchases, or loyalty.",
+      "Developer mentions offers or retention.",
+      "Developer discusses customer visibility across the group."
+    ]
+  }
+]

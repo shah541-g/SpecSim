@@ -1,0 +1,22 @@
+{
+  "name": "specsim-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SpecSim Phase 1 scenario framework for the Pharmacy Management System scenario.",
+  "scripts": {
+    "test": "node --test",
+    "baseline": "node scripts/run-baseline.js experiments/baseline-vs-final/transcripts/pharmacy-6-question.json pharmacy-management-system",
+    "final": "node scripts/run-final.js experiments/baseline-vs-final/transcripts/pharmacy-6-question.json pharmacy-management-system",
+    "generate-scenarios": "node scripts/generate-scenarios.js",
+    "scenario": "node scripts/run-scenario-conversation.js",
+    "batch": "node scripts/run-all-experiments.js",
+    "report": "node scripts/generate-report.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}

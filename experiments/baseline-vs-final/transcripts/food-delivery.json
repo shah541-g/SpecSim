@@ -1,0 +1,84 @@
+[
+  {
+    "role": "client",
+    "message": "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+    "timestamp": "2026-08-29T10:54:17.329Z"
+  },
+  {
+    "role": "developer",
+    "message": "Who are the different users or roles that will use this system?",
+    "timestamp": "2026-08-29T10:54:19.009Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:54:19.009Z",
+    "model": "openai/gpt-oss-20b"
+  },
+  {
+    "role": "developer",
+    "message": "Do you operate from a single location or multiple locations or branches?",
+    "timestamp": "2026-08-29T10:54:21.379Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:54:21.379Z",
+    "model": "openai/gpt-oss-20b"
+  },
+  {
+    "role": "developer",
+    "message": "How do you currently track your inventory, records, or data, and what problems come up?",
+    "timestamp": "2026-08-29T10:54:24.365Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:54:24.364Z",
+    "model": "openai/gpt-oss-20b"
+  },
+  {
+    "role": "developer",
+    "message": "Walk me through what happens in your core daily workflow from start to finish.",
+    "timestamp": "2026-08-29T10:54:26.719Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:54:26.719Z",
+    "model": "openai/gpt-oss-20b"
+  },
+  {
+    "role": "developer",
+    "message": "How do payments or transactions get handled and reconciled today?",
+    "timestamp": "2026-08-29T10:54:28.833Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:54:28.833Z",
+    "model": "openai/gpt-oss-20b"
+  },
+  {
+    "role": "developer",
+    "message": "What reporting or visibility do you need across the business?",
+    "timestamp": "2026-08-29T10:54:31.022Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:54:31.022Z",
+    "model": "openai/gpt-oss-20b"
+  },
+  {
+    "role": "developer",
+    "message": "What other tools or systems does this need to work with?",
+    "timestamp": "2026-08-29T10:54:34.270Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:54:34.270Z",
+    "model": "openai/gpt-oss-20b"
+  }
+]

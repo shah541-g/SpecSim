@@ -1,0 +1,26 @@
+{
+  "role": "Owner of a growing restaurant group",
+  "businessContext": "The business runs a few service shifts a day and is struggling with cash handling, order errors, and inconsistent staff accountability.",
+  "communicationStyle": "Straight-talking, practical, and focused on peak-hour disruption. Prefers clear operational answers over technical detail.",
+  "goals": [
+    "Reduce mistakes during busy service periods",
+    "Keep staff accountable for sales and actions",
+    "Improve visibility across multiple shifts and stations"
+  ],
+  "constraints": [
+    "The team is busy and does not want a complicated rollout",
+    "Service must remain fast even at peak times",
+    "There are multiple sales channels including dine-in and takeout",
+    "The owner wants real operational value rather than a generic tool"
+  ],
+  "nonNegotiables": [
+    "The system must work in a live service environment",
+    "Staff permissions need clear separation",
+    "Daily reconciliation must be reliable"
+  ],
+  "ambiguityPoints": [
+    "They do not specify whether there are multiple sites or a delivery channel",
+    "They mention growing ops but not whether they need kitchen integration or online orders",
+    "They talk about service speed but not staffing rules or approval workflows"
+  ]
+}

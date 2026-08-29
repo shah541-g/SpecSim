@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Tenant and lease management",
+    "description": "The system must support tenant records, lease terms, occupancy status, and key obligations so property information remains consistent and up to date.",
+    "category": "tenancy",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about tenant records or lease terms.",
+      "Developer mentions occupancy or unit status.",
+      "Developer discusses how property obligations are tracked."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Property and unit portfolio management",
+    "description": "The business needs a way to manage multiple units or properties with consistent recordkeeping and visibility across the portfolio.",
+    "category": "portfolio",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about multiple properties or units.",
+      "Developer mentions centralized visibility across the portfolio.",
+      "Developer discusses location-level management or comparison."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Maintenance tracking and work orders",
+    "description": "The system must support maintenance requests, work orders, tracking status, and vendor coordination to keep issues moving.",
+    "category": "maintenance",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about maintenance requests or work orders.",
+      "Developer mentions repairs or issue tracking.",
+      "Developer discusses service status or vendor relationships."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Rent collection and payment reconciliation",
+    "description": "The solution must support rent collection, arrears tracking, payment recording, and reconciliation for accurate cash flow management.",
+    "category": "payments",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about rent or payment collection.",
+      "Developer mentions late payments or reconciliation.",
+      "Developer discusses monthly financial tracking."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Inspection and compliance workflow",
+    "description": "The property manager may need inspections, document tracking, and compliance reminders to keep properties and leases in order.",
+    "category": "compliance",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about inspections or compliance checks.",
+      "Developer mentions documents or renewals.",
+      "Developer discusses regulatory or policy tracking."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Reporting and portfolio visibility",
+    "description": "The business needs reporting on occupancy, rent collection, maintenance load, and operational KPIs to manage the portfolio effectively.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards or business reporting.",
+      "Developer mentions occupancy, revenue, or maintenance trends.",
+      "Developer discusses management visibility across properties."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Vendor and contractor coordination",
+    "description": "The system may need vendor records, contractor communication, and work-order assignment to keep maintenance and upkeep organized.",
+    "category": "vendors",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about vendors or contractors.",
+      "Developer mentions service coordination or external providers.",
+      "Developer discusses contractors or service schedules."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Operational constraints and old-system realities",
+    "description": "The solution must fit real operational constraints such as existing accounting tools, staff capacity, and the need for low-friction daily use.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about existing tools or legacy systems.",
+      "Developer mentions staff adoption or minimal process disruption.",
+      "Developer discusses operational realities that affect daily management."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Communication and tenant service workflow",
+    "description": "The business may need communication with tenants about rent, maintenance, or notices while keeping issues visible and actioned.",
+    "category": "communications",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about tenant communication or notices.",
+      "Developer mentions reminders or issue updates.",
+      "Developer discusses service communication workflows."
+    ]
+  }
+]

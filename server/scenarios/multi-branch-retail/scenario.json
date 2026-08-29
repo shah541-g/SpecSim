@@ -1,0 +1,8 @@
+{
+  "id": "multi-branch-retail",
+  "title": "Multi-Branch Retail Operations Platform",
+  "initialRequest": "We run a growing retail business across several locations and our current setup is making day-to-day operations feel messy as we expand.",
+  "description": "A retail group with several branches needs a business system that can manage branch-level operations, inventory, staff, financial reconciliation, and management reporting without chaos across locations.",
+  "version": "1.0.0",
+  "status": "draft"
+}

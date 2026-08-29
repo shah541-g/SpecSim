@@ -1,0 +1,26 @@
+{
+  "role": "Operations director for a multi-branch retail group",
+  "businessContext": "The company has several branches and is expanding fast. Current operations involve inconsistent stock visibility, repeated manual reconciliations, and local branch variation that is becoming difficult to control.",
+  "communicationStyle": "Sharp, operational, and skeptical of generic solutions. Wants practical answers about scale, controls, and branch variability.",
+  "goals": [
+    "Standardize operations across branches",
+    "Improve inventory visibility and reorder planning",
+    "Reduce reconciliation errors and staff drift"
+  ],
+  "constraints": [
+    "Each branch behaves slightly differently",
+    "Operations need centralized oversight without making local teams too rigid",
+    "The group is growing and needs scalable reporting",
+    "The business cannot tolerate frequent mistakes in stock or cash handling"
+  ],
+  "nonNegotiables": [
+    "Branch-level controls must be consistent but flexible enough to work locally",
+    "The system must reduce manual reconciliation",
+    "The owner wants actual operational clarity rather than a broad generic platform"
+  ],
+  "ambiguityPoints": [
+    "They do not define how many branches exist or how much centralization is needed",
+    "They mention branch variation but not pricing, supplier, or staff rules",
+    "They are vague about current accounting or POS integrations"
+  ]
+}

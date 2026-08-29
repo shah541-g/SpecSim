@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Role-based access for staff and admin",
+    "description": "The system must support distinct permissions for principals, teachers, admin staff, and support roles so sensitive academic and student information is handled appropriately.",
+    "category": "users-and-roles",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks who can view or edit student records.",
+      "Developer asks about teacher or admin permissions.",
+      "Developer mentions auditability or restricted data access."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Student record and enrollment management",
+    "description": "The system must store student profiles, enrollment records, and academic history while keeping records consistent over time.",
+    "category": "records",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about student profiles or enrollment data.",
+      "Developer mentions academic history or records continuity.",
+      "Developer asks how records are updated over time."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Attendance and performance tracking",
+    "description": "The school needs a way to record attendance, monitor academic performance, and track patterns that might require action.",
+    "category": "academic-tracking",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about attendance or grade tracking.",
+      "Developer mentions performance monitoring or student follow-up.",
+      "Developer discusses data for academic decisions."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Timetable, class, and teacher scheduling",
+    "description": "The solution must manage class schedules, room assignments, and teacher coverage without creating confusion or gaps.",
+    "category": "scheduling",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about timetable creation or class scheduling.",
+      "Developer mentions room or teacher assignments.",
+      "Developer discusses scheduling conflicts or coverage rules."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Fee collection and billing workflows",
+    "description": "The school needs payments, fee tracking, and reminders so fees, invoices, and overdue balances are managed clearly.",
+    "category": "payments",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about school fees or payment collection.",
+      "Developer mentions invoicing or overdue balances.",
+      "Developer discusses billing workflows or reminders."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Reporting and school operations dashboards",
+    "description": "The school needs reports for attendance, academic performance, enrollment trends, and operational KPIs that support decisions by leadership.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards or managerial reporting.",
+      "Developer mentions attendance, enrollment, or performance trends.",
+      "Developer discusses operational visibility for leaders."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Parent and communication workflows",
+    "description": "The system may need to support parent communication, notifications, and basic record-sharing without creating unnecessary complexity.",
+    "category": "communications",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about parent communication or notifications.",
+      "Developer mentions messages or reminders.",
+      "Developer discusses communication between school and families."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Operational constraints and system integrations",
+    "description": "The solution must work with real school processes, likely with current admin tools, low staff training burden, and limited office disruption during term time.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about integrating with current tools.",
+      "Developer mentions training burden or staff adoption.",
+      "Developer discusses operational constraints during busy academic periods."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Exam and assessment workflow support",
+    "description": "The school may need to support assessment schedules, exam records, and grade publication in a structured and auditable way.",
+    "category": "assessment",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about exams or assessment tracking.",
+      "Developer mentions grade publication or academic records.",
+      "Developer discusses formal assessment processes."
+    ]
+  }
+]

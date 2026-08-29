@@ -1,0 +1,26 @@
+{
+  "role": "Clinic operations manager for a hospital group",
+  "businessContext": "The hospital is struggling with appointment bottlenecks, patient follow-up, and inconsistent scheduling across departments. They need reliable coordination to protect both patient flow and staff time.",
+  "communicationStyle": "Highly process-focused, risk-aware, and careful with operational detail. Prefers practical and compliance-oriented language.",
+  "goals": [
+    "Reduce no-shows and scheduling gaps",
+    "Keep patient records and appointments coordinated",
+    "Improve clinic throughput without compromising care"
+  ],
+  "constraints": [
+    "Patient data must be protected",
+    "Clinical workflows vary by department",
+    "Staff are busy and need low-friction processes",
+    "The solution must work in real hospital conditions"
+  ],
+  "nonNegotiables": [
+    "Patient privacy and care continuity are non-negotiable",
+    "Scheduling must be accurate and auditable",
+    "Workflow must respect clinical roles and departmental differences"
+  ],
+  "ambiguityPoints": [
+    "They may have multiple clinics and doctors with different specialties",
+    "They are vague about emergency workflows and follow-up requirements",
+    "They do not specify current software or referral processes"
+  ]
+}

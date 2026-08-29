@@ -1,0 +1,26 @@
+{
+  "role": "Property manager for a growing portfolio",
+  "businessContext": "The manager oversees multiple residential or commercial units and is losing track of maintenance issues, rent collection, and lease obligations.",
+  "communicationStyle": "Organized and practical, focused on reliable admin operations and avoiding missed obligations. Wants concise and realistic answers.",
+  "goals": [
+    "Keep tenant and lease records organized",
+    "Reduce missed payments and maintenance delays",
+    "Improve visibility across the portfolio"
+  ],
+  "constraints": [
+    "The portfolio may include multiple properties and types of units",
+    "Staff are busy and need straightforward workflows",
+    "Maintenance coordination can be unpredictable",
+    "The manager wants a low-friction way to track obligations"
+  ],
+  "nonNegotiables": [
+    "The system must keep tenancy and payment records accurate",
+    "Maintenance needs must be traceable",
+    "The portfolio view must not become disorganized"
+  ],
+  "ambiguityPoints": [
+    "They do not specify whether the portfolio includes residential, commercial, or mixed property types",
+    "They mention maintenance and payments but not vendor coordination",
+    "They are vague about working with existing accounting or lease systems"
+  ]
+}

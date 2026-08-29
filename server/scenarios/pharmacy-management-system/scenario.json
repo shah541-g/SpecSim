@@ -1,0 +1,8 @@
+{
+  "id": "pharmacy-management-system",
+  "title": "Pharmacy Management System",
+  "initialRequest": "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+  "description": "A small but growing independent pharmacy chain needs a unified management system to support day-to-day operations, pharmacy compliance, customer flow, and future expansion without adding operational chaos.",
+  "version": "1.0.0",
+  "status": "draft"
+}

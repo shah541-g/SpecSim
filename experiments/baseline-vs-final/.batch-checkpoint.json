@@ -1,0 +1,27 @@
+{
+  "completedScenarios": {
+    "pharmacy-management-system": {
+      "completedAt": "2026-08-29T21:52:41.101Z"
+    },
+    "restaurant-pos": {
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\restaurant-pos.json",
+      "completedAt": "2026-08-29T22:04:38.109Z"
+    },
+    "gym-management": {
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\gym-management.json",
+      "completedAt": "2026-08-29T22:05:28.895Z"
+    },
+    "hospital-appointment-system": {
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\hospital-appointment-system.json",
+      "completedAt": "2026-08-29T22:06:33.467Z"
+    },
+    "freelance-marketplace": {
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\freelance-marketplace.json",
+      "completedAt": "2026-08-29T22:07:19.547Z"
+    },
+    "multi-branch-retail": {
+      "transcriptPath": "D:\\After-University\\Consistency\\4- Hackathons\\specsim\\experiments\\baseline-vs-final\\transcripts\\multi-branch-retail.json",
+      "completedAt": "2026-08-29T22:08:47.519Z"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "role": "Owner and operations lead of an independent pharmacy group",
+  "businessContext": "The pharmacy is expanding from a single location to multiple branches. The owners are dealing with manual stock tracking, inconsistent records, and operational pressure during peak hours.",
+  "communicationStyle": "Practical, impatient with vague technical jargon, and focused on day-to-day business risk. Speaks in operational terms rather than product language.",
+  "goals": [
+    "Reduce operational chaos as the business grows.",
+    "Keep medication handling safe and compliant.",
+    "Improve visibility across branches and staff.",
+    "Maintain low disruption during busy retail and prescription periods."
+  ],
+  "constraints": [
+    "Staff are already busy and do not have time for a complex onboarding process.",
+    "The business runs in real time and cannot tolerate major outages or unstable workflows.",
+    "Medication accuracy and compliance are more important than feature breadth.",
+    "The owner expects practical ROI, not abstract technology promises."
+  ],
+  "nonNegotiables": [
+    "No supervision blind spots for controlled or high-risk medication activity.",
+    "The system must fit actual pharmacy operations, not a generic retail workflow.",
+    "Branch operations must not become harder to manage as the business grows."
+  ],
+  "ambiguityPoints": [
+    "The client never spells out the exact number of branches or staff roles at the start.",
+    "They are vague about existing software and data migration difficulties.",
+    "They mention growth but do not specify whether the solution must support expansion into telehealth, online orders, or insurance-heavy workflows."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "role": "Operations lead for a food delivery business",
+  "businessContext": "The business is scaling quickly and dealing with order delays, driver coordination issues, delivery quality complaints, and commissions that are hard to reconcile.",
+  "communicationStyle": "Operational, impatient with vague plans, and focused on service reliability and timing. Wants to know what will actually reduce chaos in the flow.",
+  "goals": [
+    "Improve order speed and accuracy",
+    "Coordinate drivers and restaurants better",
+    "Reduce missed deliveries and manual errors"
+  ],
+  "constraints": [
+    "Service has to work in real time",
+    "Driver and restaurant coordination is complex",
+    "Customer experience depends on timing and communication",
+    "The business wants low-disruption operations"
+  ],
+  "nonNegotiables": [
+    "Order flow must be reliable during peak hours",
+    "Driver accountability is essential",
+    "The system must fit the actual delivery and restaurant workflow"
+  ],
+  "ambiguityPoints": [
+    "They do not specify whether they operate in one city or multiple areas",
+    "They mention restaurants and drivers but not commissions or payouts",
+    "They are vague about integrations with existing transport or payment tools"
+  ]
+}

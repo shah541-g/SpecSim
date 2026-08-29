@@ -1,0 +1,26 @@
+{
+  "role": "Marketplace founder and operator",
+  "businessContext": "The marketplace is growing and currently depends on ad hoc communication, inconsistent proposals, and manual payment tracking that creates friction for both clients and freelancers.",
+  "communicationStyle": "Commercial and practical, focused on buyer and seller trust and operational scale. Wants a clear system that reduces chaos and disputes.",
+  "goals": [
+    "Improve trust and clarity for both sides",
+    "Keep projects and payments organized",
+    "Scale without manual coordination overhead"
+  ],
+  "constraints": [
+    "The marketplace has multiple role types and workflows",
+    "Trust and payment clarity are critical",
+    "The founder wants simple operations and low admin burden",
+    "The platform must support flexible project work"
+  ],
+  "nonNegotiables": [
+    "Project and payment responsibilities must be clear",
+    "The system must protect marketplace trust and quality expectations",
+    "Operations need to scale cleanly"
+  ],
+  "ambiguityPoints": [
+    "They do not specify whether it is a marketplace, agency, or project platform",
+    "They mention clients and freelancers but not dispute or contract rules",
+    "They are vague about existing tooling and external payment integrations"
+  ]
+}

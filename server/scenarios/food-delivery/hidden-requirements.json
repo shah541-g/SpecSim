@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Restaurant and partner onboarding",
+    "description": "The platform must manage restaurant onboarding, menu information, order routing rules, and performance visibility for each partner.",
+    "category": "partners",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about restaurant partners or onboarding.",
+      "Developer mentions menu or service rules.",
+      "Developer discusses partner performance or setup."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Order intake and dispatch workflow",
+    "description": "The business needs a reliable order intake, assignment, and routing system so each order reaches the right driver and restaurant quickly.",
+    "category": "order-workflow",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks how orders are received and assigned.",
+      "Developer mentions dispatch or driver assignment.",
+      "Developer discusses timing and order accuracy."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Driver management and accountability",
+    "description": "The system must support driver profiles, availability tracking, delivery status, and performance monitoring for safe, accountable operations.",
+    "category": "fleet-management",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about drivers, availability, or delivery status.",
+      "Developer mentions accountability or performance tracking.",
+      "Developer discusses real-time delivery operations."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Delivery and ETA management",
+    "description": "The business needs real-time delivery tracking, estimated times, and route coordination so service quality remains consistent.",
+    "category": "logistics",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about ETA or route management.",
+      "Developer mentions live delivery tracking.",
+      "Developer discusses timing or route optimization."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Payment, commissions, and reconciliation",
+    "description": "The system must support customer payments, restaurant payouts, driver commissions, and reconciliation to avoid manual disputes.",
+    "category": "payments",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about payment flows or payouts.",
+      "Developer mentions commissions or reconciliation.",
+      "Developer discusses fees or settlement."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Customer communication and support flow",
+    "description": "The business needs order status updates, support handling, and issue resolution so delivery problems are visible and manageable.",
+    "category": "customer-support",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about customer support, notifications, or issue management.",
+      "Developer mentions order updates or complaints.",
+      "Developer discusses customer communication in delivery operations."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Operations reporting and dashboards",
+    "description": "The business needs reports on order volume, fulfillment speed, failed deliveries, and partner or driver performance to make operational decisions.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards or operational metrics.",
+      "Developer mentions order volume, completion rates, or partner performance.",
+      "Developer discusses operational visibility for management."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Inventory and preparation coordination",
+    "description": "The business must coordinate preparation timing between restaurants and the delivery workflow to avoid delays and food quality issues.",
+    "category": "inventory-or-preparation",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about food prep, stock, or cooking readiness.",
+      "Developer mentions kitchen preparation timing.",
+      "Developer discusses delays or order completion quality."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Operational constraints and integration realities",
+    "description": "The solution must fit real-world conditions such as city coverage, payment integrations, existing booking tools, and the need for low friction during rush periods.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about existing tools or third-party systems.",
+      "Developer mentions training burden or downtime risk.",
+      "Developer discusses the realities of busy delivery periods and city coverage."
+    ]
+  }
+]

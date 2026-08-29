@@ -1,0 +1,8 @@
+{
+  "id": "freelance-marketplace",
+  "title": "Freelance Marketplace Platform",
+  "initialRequest": "We need a better way to connect clients with freelancers and keep project work from getting messy and hard to manage.",
+  "description": "A freelance marketplace needs a system that handles client-freelancer matching, project delivery, payments, and trust while staying manageable as the market grows.",
+  "version": "1.0.0",
+  "status": "draft"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "school-management",
+  "title": "School Management System",
+  "initialRequest": "We need a system to help us run a school more smoothly and stop losing track of so much information.",
+  "description": "A school needs a central system to manage attendance, grades, student records, and administrative work without making staff rely on scattered tools.",
+  "version": "1.0.0",
+  "status": "draft"
+}

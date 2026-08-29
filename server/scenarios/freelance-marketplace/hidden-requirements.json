@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "User roles and trust management",
+    "description": "The platform must support distinct roles for clients, freelancers, admins, and possibly moderators, with clear boundaries and trust controls.",
+    "category": "users-and-roles",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about user roles or permissions.",
+      "Developer mentions client and freelancer differences.",
+      "Developer discusses trust, moderation, or access controls."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Project posting and matching workflow",
+    "description": "The platform must support project listings, freelancer discovery, proposals, and matching workflows with clarity for both sides.",
+    "category": "projects",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks how projects are posted or matched.",
+      "Developer mentions proposals or freelance discovery.",
+      "Developer discusses project intake and selection."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Contract, milestone, and delivery workflow",
+    "description": "The system must support project scope, milestones, approvals, and delivery tracking so responsibilities and handoff points are clear.",
+    "category": "project-delivery",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks how projects are scoped or delivered.",
+      "Developer mentions milestones or approvals.",
+      "Developer discusses handoff and delivery accountability."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Payment, escrow, and dispute handling",
+    "description": "The platform must support payment processing, milestone-based release, and dispute or refund workflows without manual confusion.",
+    "category": "payments",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about payments, escrow, or settlement.",
+      "Developer mentions milestone release or disputes.",
+      "Developer discusses financial trust and refunds."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Reputation and profile management",
+    "description": "The platform needs freelancer profiles, client reviews, and reputation mechanisms to support trust and quality control.",
+    "category": "trust",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about profiles or reviews.",
+      "Developer mentions reputation or trust signals.",
+      "Developer discusses quality assurance or vetting."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Reporting and marketplace visibility",
+    "description": "The business needs reporting on demand, marketplace activity, conversion, and success metrics to understand what is working.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards or marketplace metrics.",
+      "Developer mentions platform activity, conversion, or performance.",
+      "Developer discusses visibility for management."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Support and resolution workflow",
+    "description": "The platform likely needs dispute handling, support channels, and communication tools to resolve issues without damaging trust.",
+    "category": "support",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about support or dispute resolution.",
+      "Developer mentions conflict management or escalations.",
+      "Developer discusses issue handling and communication."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Operational constraints and platform integrations",
+    "description": "The solution must fit real operating realities such as external payment rails, low-friction onboarding, and moderation responsibilities.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about existing tools or external integrations.",
+      "Developer mentions onboarding burden or moderation needs.",
+      "Developer discusses operational realities and scale."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Messaging and coordination workflow",
+    "description": "The business may need asynchronous messaging and coordination tools so clients and freelancers can manage project communication without losing context.",
+    "category": "communications",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about messaging or project communication.",
+      "Developer mentions coordination or discussion history.",
+      "Developer discusses communication workflows between parties."
+    ]
+  }
+]

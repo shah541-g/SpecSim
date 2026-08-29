@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Role-based staff access",
+    "description": "The system must support distinct permissions for managers, cashiers, kitchen staff, and supervisors, with role-specific access to orders, refunds, and operational controls.",
+    "category": "users-and-roles",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks who can open tills, refund orders, or change menu pricing.",
+      "Developer asks about staff roles and permission boundaries.",
+      "Developer mentions accountability and audit trails for sales actions."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Multi-location operations",
+    "description": "The system must support more than one restaurant location or service site while keeping orders, pricing, and team reporting consistent and separate by branch.",
+    "category": "branches-and-operations",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks whether there are multiple sites or branches.",
+      "Developer asks how inventory, pricing, or reports are kept separate by location.",
+      "Developer mentions location-level comparisons or branch performance."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Menu and inventory tracking",
+    "description": "The system must handle menu items, stock levels, ingredient usage, and low-stock warnings so the kitchen can avoid sellouts and waste.",
+    "category": "inventory",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about stock controls or item availability.",
+      "Developer discusses ingredients, recipe usage, or expiration risks.",
+      "Developer mentions low-stock alerts or waste prevention."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Order flow and kitchen handoff",
+    "description": "The system must support order intake, table or ticket tracking, kitchen communication, and status updates so the workflow stays accurate and fast.",
+    "category": "order-workflow",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks how orders are captured and sent to the kitchen.",
+      "Developer mentions tickets, table service, or status tracking.",
+      "Developer discusses order accuracy or peak-time service flow."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Payment and reconciliation",
+    "description": "The system must support cash, card, and digital payments with end-of-day settlement and reconciliation to reduce shortfalls and manual checks.",
+    "category": "payments",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about payment methods or tipping.",
+      "Developer asks how sales are reconciled at closing.",
+      "Developer mentions cash drawers, card settlement, or daily totals."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Reporting and operational dashboards",
+    "description": "The business needs sales, item performance, staffing, and service metrics to understand demand and operational issues across shifts and locations.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about sales reports, shift dashboards, or item performance.",
+      "Developer mentions staffing visibility or service trends.",
+      "Developer discusses operational KPIs for management."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Supplier and purchasing workflow",
+    "description": "The business needs purchasing records, supplier pricing, and restocking planning to keep core ingredients available without unnecessary waste.",
+    "category": "suppliers-and-purchasing",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about supplier records or reorder planning.",
+      "Developer mentions ingredient restocking or purchase orders.",
+      "Developer discusses cost control or procurement."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Customer and loyalty retention needs",
+    "description": "The system must support customer details, repeat purchase patterns, and loyalty or promotion tracking without creating friction at checkout.",
+    "category": "customer-records",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about customer records or loyalty.",
+      "Developer mentions repeat purchase behavior or promotions.",
+      "Developer discusses retention or personalized offers."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Operational constraints and integrations",
+    "description": "The solution must fit real restaurant operations, likely with existing accounting or POS tools, low training overhead, and minimal downtime during business hours.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about integrations with current tools.",
+      "Developer mentions training burden, staff adoption, or downtime risk.",
+      "Developer discusses low-friction operations during service."
+    ]
+  }
+]

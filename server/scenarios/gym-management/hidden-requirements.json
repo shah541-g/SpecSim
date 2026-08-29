@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Member and access management",
+    "description": "The system must support member profiles, membership tiers, access periods, and restrictions so only valid members can check in and use facilities.",
+    "category": "users-and-roles",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about member data or access rules.",
+      "Developer asks who can check in members or manage access.",
+      "Developer mentions membership plans or expiry rules."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Class scheduling and attendance tracking",
+    "description": "The gym needs a clear way to schedule classes, track attendance, and manage capacity or instructor assignments.",
+    "category": "scheduling",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about classes or bookings.",
+      "Developer mentions attendance or class capacity.",
+      "Developer discusses trainer assignment or scheduling complexity."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Equipment and facility usage",
+    "description": "The system must track facility usage, equipment booking, and maintenance requirements so operations remain safe and smooth.",
+    "category": "operations",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about equipment booking or maintenance.",
+      "Developer mentions facility access or usage limits.",
+      "Developer discusses operational safety or upkeep."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Billing, renewals, and payment handling",
+    "description": "The system must support memberships, recurring payments, cancellations, freezes, and payment reconciliation without manual errors.",
+    "category": "payments",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about recurring payments or billing cycles.",
+      "Developer mentions renewals, freezes, or failed payments.",
+      "Developer asks how sales and refunds are reconciled."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Check-in and facility access workflows",
+    "description": "The business needs fast member check-in, restricted access, and clear records of who used which facilities or classes at what time.",
+    "category": "access-control",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about check-in workflows or access control.",
+      "Developer mentions member attendance records.",
+      "Developer discusses restrictions or front-desk visibility."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Reporting and performance dashboards",
+    "description": "The gym needs membership, attendance, retention, and revenue reporting so management can understand churn, usage, and operational performance.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards, retention, or attendance reports.",
+      "Developer mentions revenue or member trends.",
+      "Developer discusses management visibility across the business."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Marketing and retention workflows",
+    "description": "The business may need promotions, referral tracking, and reminder workflows to maintain member engagement and reduce churn.",
+    "category": "customer-journey",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about referral tracking or retention campaigns.",
+      "Developer mentions reminders or membership promotions.",
+      "Developer discusses keeping members engaged."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Staff coordination and operational realities",
+    "description": "The solution must fit the realities of front-desk staff, trainers, and busy check-in periods while keeping onboarding and day-to-day use simple.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about staff roles or front-desk operations.",
+      "Developer mentions low training burden or busy periods.",
+      "Developer discusses operational constraints such as peak-time pressure."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Integration needs with payment and CRM tools",
+    "description": "The business may need to connect with payment vendors, email tools, or existing systems to avoid duplicate work and manual reconciliation.",
+    "category": "integrations",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about existing software or external tools.",
+      "Developer mentions syncing payments or member data.",
+      "Developer discusses automation with CRM or communication tools."
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Role-based clinical access and permissions",
+    "description": "The system must support different permissions for doctors, nurses, front-desk staff, and administrators so patient data and scheduling actions are handled appropriately.",
+    "category": "users-and-roles",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks who can book appointments or view patient details.",
+      "Developer asks about role-specific permissions.",
+      "Developer mentions accountability or audit trails for clinical actions."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Patient records and appointment history",
+    "description": "The system must store patient profiles, appointment history, and relevant clinical notes without losing continuity across visits.",
+    "category": "records",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about patient records or appointment history.",
+      "Developer mentions continuity across visits.",
+      "Developer discusses record retention or patient context."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Scheduling and resource allocation",
+    "description": "The system must manage doctor availability, clinic rooms, and appointment slots so bookings are accurate and staff are not overbooked.",
+    "category": "scheduling",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks how appointments are booked or assigned.",
+      "Developer mentions doctor or room availability.",
+      "Developer discusses scheduling conflicts or capacity."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Check-in and triage workflow",
+    "description": "The hospital needs an intake process for arrival, waiting lists, and triage so patients are sorted correctly and staff know who needs attention.",
+    "category": "operations",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks how patients are checked in or triaged.",
+      "Developer mentions waitlists or queue management.",
+      "Developer discusses prioritization and patient flow."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Follow-up and reminders",
+    "description": "The system must support reminders, follow-up scheduling, and patient communication to reduce missed appointments and improve continuity of care.",
+    "category": "communications",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about reminders or follow-up.",
+      "Developer mentions no-shows or missed appointments.",
+      "Developer discusses patient communication workflows."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Reporting and operational visibility",
+    "description": "The hospital needs visibility into appointment volumes, wait times, no-show rates, and staff or clinic performance to improve operational decisions.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards or operational metrics.",
+      "Developer mentions no-show or throughput reporting.",
+      "Developer discusses clinic performance and management visibility."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Insurance and billing coordination",
+    "description": "The hospital may need billing or insurance coordination tied to appointments and treatment records to support financial workflows.",
+    "category": "payments",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about billing or insurance claims.",
+      "Developer mentions invoice or financial coordination.",
+      "Developer discusses charge capture for appointments or treatment."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Compliance, privacy, and audit requirements",
+    "description": "The system must satisfy privacy and audit expectations with clear handling of sensitive patient information and clinical actions.",
+    "category": "compliance",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about privacy, audit, or access controls.",
+      "Developer mentions compliance or secure handling of clinical data.",
+      "Developer discusses patient data protection."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Integration with existing hospital systems",
+    "description": "The solution must work alongside current hospital tools, administrative software, or legacy systems without breaking processes during active operations.",
+    "category": "integrations",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about integrations with current systems.",
+      "Developer mentions existing software or processes.",
+      "Developer discusses operational constraints and system handoffs."
+    ]
+  }
+]

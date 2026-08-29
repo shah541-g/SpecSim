@@ -1,0 +1,8 @@
+{
+  "id": "restaurant-pos",
+  "title": "Restaurant POS and Operations System",
+  "initialRequest": "We need a restaurant system that can handle sales, staff, and daily operations without everything becoming chaotic during service.",
+  "description": "A busy restaurant with counter service, kitchen coordination, and a growing team needs a system that handles ordering, payments, staffing, and operational visibility without slowing down service.",
+  "version": "1.0.0",
+  "status": "draft"
+}

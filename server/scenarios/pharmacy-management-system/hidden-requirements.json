@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Role-based access control",
+    "description": "The system must support distinct roles for pharmacists, technicians, cashiers, branch managers, and administrators, with role-specific permissions and an audit trail for medication-related actions.",
+    "category": "users-and-roles",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks who can prescribe, dispense, or approve medications.",
+      "Developer asks how permissions differ by role.",
+      "Developer discusses accountability or audit logs for pharmacy actions."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Multi-branch operations",
+    "description": "The system must support multiple pharmacy branches with centralized oversight for pricing, inventory, and operational metrics while keeping local branch-level transactions and stock handling separate.",
+    "category": "branches-and-operations",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about multiple branch management.",
+      "Developer asks how stock or pricing is centralized or localized per branch.",
+      "Developer mentions branch-level reporting or inventory independence."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Inventory and expiry tracking",
+    "description": "The system must track stock levels, batch numbers, expiry dates, manufacturer information, and low-stock warnings so expired or near-expiry items can be managed before they affect care.",
+    "category": "inventory",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about stock levels or reorder thresholds.",
+      "Developer discusses expiry dates, batches, or product recall concerns.",
+      "Developer mentions stock alerts or preventing medication waste."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Prescription workflow and controlled-substance handling",
+    "description": "The system must handle prescription intake, validation, refill tracking, and restricted medication controls with clear workflows for high-risk or controlled medicines.",
+    "category": "prescriptions",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks how prescriptions are captured or verified.",
+      "Developer inquires about refill rules or repeat prescriptions.",
+      "Developer mentions controlled substances or special handling."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Payment, billing, and reconciliation",
+    "description": "The system must support in-store payment flows, insurance or claim settlement processes, and cash reconciliation so the pharmacy can close end-of-day totals accurately and reduce manual errors.",
+    "category": "payments",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about payment methods or reimbursement.",
+      "Developer discusses cash drawers or daily sales reconciliation.",
+      "Developer mentions insurance billing or claim support."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Reporting and operational dashboards",
+    "description": "The pharmacy needs reporting for sales, inventory movement, prescription trends, margin analysis, branch performance, and operational KPIs to support management decisions.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards, KPIs, or reports.",
+      "Developer mentions sales trends, stock movement, or branch comparisons.",
+      "Developer discusses operational visibility for management."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Supplier and purchasing workflow",
+    "description": "The system must support purchase orders, supplier records, lead times, and reorder planning so essential medications can be procured efficiently while controlling costs.",
+    "category": "suppliers-and-purchasing",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about supplier records or purchase orders.",
+      "Developer mentions reorder triggers or lead times.",
+      "Developer discusses procurement and cost control."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Customer and patient records",
+    "description": "The system must maintain basic customer or patient records, relevant prescription history, and note-taking that supports repeat purchases, reminder workflows, and safer service delivery.",
+    "category": "customer-records",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about patient records or customer histories.",
+      "Developer mentions repeat purchase behavior or reminder messages.",
+      "Developer discusses note-taking or record continuity."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Operational constraints and integration realities",
+    "description": "The solution must work in a real-world pharmacy environment, likely with existing accounting or pharmacy software, limited staff training time, and a need for stable, low-friction operations during busy retail hours.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about system integration with current tools.",
+      "Developer mentions training burden, staff adoption, or downtime risk.",
+      "Developer discusses operational constraints such as low internet, fast checkout, or legacy systems."
+    ]
+  }
+]

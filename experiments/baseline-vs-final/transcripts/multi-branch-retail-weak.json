@@ -1,0 +1,29 @@
+[
+  {
+    "role": "client",
+    "message": "I need a management system for my pharmacy business. We are growing and the current way of managing things is becoming difficult.",
+    "timestamp": "2026-08-29T10:56:09.861Z"
+  },
+  {
+    "role": "developer",
+    "message": "What should the UI look like?",
+    "timestamp": "2026-08-29T10:56:10.618Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:56:10.618Z",
+    "model": "openai/gpt-oss-20b"
+  },
+  {
+    "role": "developer",
+    "message": "Can we just make it modern, simple, and easy?",
+    "timestamp": "2026-08-29T10:56:12.743Z"
+  },
+  {
+    "role": "client",
+    "message": "All Groq models failed due to transient availability issues. Please try again later.",
+    "timestamp": "2026-08-29T10:56:12.743Z",
+    "model": "openai/gpt-oss-20b"
+  }
+]

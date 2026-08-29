@@ -1,0 +1,26 @@
+{
+  "role": "Gym owner and operations lead",
+  "businessContext": "The gym is growing and currently relies on spreadsheets, paper signups, and ad hoc schedules. The owner is frustrated by missed class bookings and inconsistent member records.",
+  "communicationStyle": "Busy, practical, and wants to know what the software will fix in day-to-day operations. Avoids jargon and wants clear operational outcomes.",
+  "goals": [
+    "Simplify member management",
+    "Keep class attendance and check-ins under control",
+    "Reduce missed payments and manual admin"
+  ],
+  "constraints": [
+    "The business has peak-hour check-in pressure",
+    "Staff are not technical",
+    "The owner wants a low-friction rollout",
+    "Membership and billing rules are more important than feature breadth"
+  ],
+  "nonNegotiables": [
+    "The system must preserve member access rules",
+    "The business needs reliable daily visibility",
+    "Billing and cancellations must be tracked accurately"
+  ],
+  "ambiguityPoints": [
+    "They do not specify whether there are multiple branches or franchise locations",
+    "They mention classes but not equipment or trainer scheduling complexity",
+    "They are vague about payment and contract rules at the start"
+  ]
+}

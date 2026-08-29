@@ -1,0 +1,8 @@
+{
+  "id": "gym-management",
+  "title": "Gym Management System",
+  "initialRequest": "We run a gym and our admin is all over the place. We need something to manage members, classes, and operations more smoothly.",
+  "description": "A fitness business with memberships, class schedules, check-ins, and equipment usage needs a simple but reliable system to keep operations and reporting under control.",
+  "version": "1.0.0",
+  "status": "draft"
+}

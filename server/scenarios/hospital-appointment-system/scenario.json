@@ -1,0 +1,8 @@
+{
+  "id": "hospital-appointment-system",
+  "title": "Hospital Appointment and Scheduling System",
+  "initialRequest": "We have a lot of appointment chaos and patient admin problems. We need something to help us run clinics more smoothly.",
+  "description": "A hospital or clinic network needs a scheduling and patient coordination system designed around real healthcare workflows, privacy, and staff coordination.",
+  "version": "1.0.0",
+  "status": "draft"
+}

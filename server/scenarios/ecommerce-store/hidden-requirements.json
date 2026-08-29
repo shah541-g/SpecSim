@@ -1,0 +1,110 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Product catalog and variant management",
+    "description": "The store must manage product listings, variants, pricing, and descriptions in a structured way so customers see accurate information and staff can maintain inventory correctly.",
+    "category": "catalog",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about products, SKUs, or variants.",
+      "Developer mentions product catalog management.",
+      "Developer discusses pricing or listing accuracy."
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Order management and fulfillment flow",
+    "description": "The system must support order intake, status updates, packing, shipping, and customer communication across the fulfillment workflow.",
+    "category": "orders",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks how orders are processed and shipped.",
+      "Developer mentions order status or fulfillment tracking.",
+      "Developer discusses customer communication around delivery."
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Inventory and stock synchronization",
+    "description": "The business needs accurate stock counts, low-stock alerts, and inventory control across product variants and channels.",
+    "category": "inventory",
+    "priority": "critical",
+    "evidenceCriteria": [
+      "Developer asks about inventory, stock, or reorder triggers.",
+      "Developer mentions stock accuracy across channels.",
+      "Developer discusses low-stock or oversell risk."
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Payments, returns, and refunds",
+    "description": "The system must support secure payment processing, return handling, and refund workflows with clear accounting outcomes.",
+    "category": "payments",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about payment methods or currency.",
+      "Developer mentions returns or refunds.",
+      "Developer discusses settlement or reconciliation."
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Customer accounts and order history",
+    "description": "The business may need customer accounts, saved addresses, and order history to support repeat business and support operations.",
+    "category": "customer-records",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about customer accounts or saved profiles.",
+      "Developer mentions order history or support.",
+      "Developer discusses loyalty or repeat purchase behavior."
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Shipping and logistics coordination",
+    "description": "The business needs shipping carrier details, address accuracy, and delivery coordination so fulfillment keeps moving without delays or errors.",
+    "category": "logistics",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about delivery or shipping operations.",
+      "Developer mentions carriers or address validation.",
+      "Developer discusses order dispatch or fulfillment issues."
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Reporting and business visibility",
+    "description": "The owner needs accurate sales, conversion, inventory, and operational reporting so choices are based on real data rather than guesswork.",
+    "category": "reporting",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about dashboards or sales reporting.",
+      "Developer mentions conversion, stock movement, or fulfillment KPIs.",
+      "Developer discusses operational visibility for management."
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Marketing and promotions workflow",
+    "description": "The business may need product promotions, coupon logic, and campaign tracking to support acquisition and retention.",
+    "category": "marketing",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about discounts or coupons.",
+      "Developer mentions campaign tracking or promotions.",
+      "Developer discusses customer acquisition or retention."
+    ]
+  },
+  {
+    "id": "REQ-009",
+    "name": "Operational constraints and integration needs",
+    "description": "The solution must fit real-world business complexity such as marketplace connections, existing accounting tools, and low-friction warehouse operations.",
+    "category": "business-constraints",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about current tools or integrations.",
+      "Developer mentions staff adoption or process disruption.",
+      "Developer discusses operational realities like low staff capacity or system dependencies."
+    ]
+  }
+]

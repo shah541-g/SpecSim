@@ -1,0 +1,26 @@
+{
+  "role": "School principal and admin lead",
+  "businessContext": "The school is managing a growing student base and several departments using a mix of spreadsheets, paper records, and disconnected tools.",
+  "communicationStyle": "Responsible, cautious, and focused on operational reliability, data integrity, and low disruption. Wants clear accountability and rigid rules.",
+  "goals": [
+    "Keep student records accurate and secure",
+    "Reduce admin burden across departments",
+    "Improve attendance and reporting visibility"
+  ],
+  "constraints": [
+    "The school must protect student privacy",
+    "Staff time is limited and overloaded",
+    "The solution must work with real school calendars and busy periods",
+    "Change management needs to be low-friction"
+  ],
+  "nonNegotiables": [
+    "Student data must be protected and auditable",
+    "Reporting must be reliable for academic tracking",
+    "The system must fit the school’s current operations"
+  ],
+  "ambiguityPoints": [
+    "They do not specify whether the school has multiple campuses or grade levels",
+    "They mention records but not fees or transport workflows",
+    "They are vague about whether there are existing student systems or integrations"
+  ]
+}
