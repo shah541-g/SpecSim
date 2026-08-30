@@ -1,0 +1,9 @@
+{
+  "id": "crime-investigation",
+  "title": "Crime Investigation Case Management System",
+  "initialRequest": "Our detectives are buried in paperwork and we keep losing track of evidence between cases. We need a system to help us manage our investigations better.",
+  "description": "A metropolitan police department's Criminal Investigation Division (CID) is struggling to manage a growing caseload with paper files and disconnected spreadsheets. The scenario should help the developer uncover the real underlying needs behind the department's request — not just \"digitize our files.\"",
+  "status": "draft",
+  "difficulty": "hard",
+  "version": "1.0.0"
+}

@@ -56,6 +56,7 @@ class EvaluatorAgentService {
             type: 'object',
             properties: {
               id: { type: 'string' },
+              requirementName: { type: 'string' },
               status: { type: 'string', enum: ['DISCOVERED', 'PARTIALLY_DISCOVERED', 'MISSED'] },
               evidence: { type: ['string', 'null'] },
             },
@@ -259,6 +260,22 @@ Rules:
     };
   }
 
+  attachRequirementMeta(result, requirements) {
+    const lookup = new Map((requirements || []).map((requirement) => [requirement.id, requirement]));
+    const requirementsResult = (result.requirements || []).map((entry) => {
+      const matched = lookup.get(entry.id);
+      const requirementName = typeof entry.requirementName === 'string' && entry.requirementName.trim() !== ''
+        ? entry.requirementName
+        : (matched && matched.name) || entry.id;
+      return {
+        ...entry,
+        requirementName,
+        requirementDescription: (matched && matched.description) || entry.requirementDescription || '',
+      };
+    });
+    return { ...result, requirements: requirementsResult };
+  }
+
   async evaluateTranscript({ transcript, requirements, rubric }) {
     const prompt = this.buildEvaluationPrompt({ transcript, requirements, rubric });
     const schemaHint = `Return valid JSON only and match this schema exactly: ${JSON.stringify(this.buildSchema(), null, 2)}`;
@@ -286,7 +303,7 @@ Rules:
         if (parsed) {
           try {
             this.validateStructuredResult(parsed);
-            return { ...parsed, evaluationMode: 'llm' };
+            return this.attachRequirementMeta({ ...parsed, evaluationMode: 'llm' }, requirements);
           } catch (error) {
             lastError = error.message;
           }
@@ -303,7 +320,8 @@ Rules:
       }
     }
 
-    return { ...this.buildFallbackEvaluationResult({ transcript, requirements }), evaluationMode: 'fallback' };
+    const fallback = this.buildFallbackEvaluationResult({ transcript, requirements });
+    return this.attachRequirementMeta({ ...fallback, evaluationMode: 'fallback' }, requirements);
   }
 
   async evaluateSession(sessionId, scenario = null) {

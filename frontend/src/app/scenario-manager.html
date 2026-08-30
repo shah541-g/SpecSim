@@ -1,0 +1,322 @@
+<div class="manager">
+  <div class="manager-head">
+    <h2>Scenario Management</h2>
+    <div class="manager-actions">
+      <button
+        class="btn btn-ghost"
+        (click)="importOpen.set(!importOpen())"
+      >
+        Upload via Sheet
+      </button>
+      <button
+        class="btn btn-primary"
+        (click)="startCreate()"
+        [disabled]="creating() || saving()"
+      >
+        + New Scenario
+      </button>
+      <button class="btn btn-ghost" (click)="refresh()" [disabled]="loading()">
+        @if (loading() && !editingId() && !creating()) {
+          <span class="spinner spinner-dark"></span>
+        } @else {
+          Refresh
+        }
+      </button>
+    </div>
+  </div>
+
+  @if (importOpen()) {
+    <section class="card import-card">
+      <div class="editor-head">
+        <h3>Import Scenarios from a Sheet</h3>
+        <button class="btn btn-ghost btn-sm" (click)="resetImport(); importOpen.set(false)">
+          Close
+        </button>
+      </div>
+      <p class="hint">
+        Upload an .xlsx or .csv file. One row per hidden requirement; rows sharing
+        the same <code>scenario_id</code> are grouped into a single scenario (8-10
+        requirements each). Download the template to get the exact column format.
+      </p>
+
+      <div class="import-actions">
+        <button class="btn btn-ghost btn-sm" (click)="downloadTemplate()">
+          Download Template
+        </button>
+        <label class="btn btn-ghost btn-sm file-btn">
+          @if (selectedFileName()) {
+            <span class="file-selected">{{ selectedFileName() }}</span>
+          } @else {
+            Choose File…
+          }
+          <input
+            type="file"
+            accept=".xlsx,.xls,.csv"
+            (change)="onFileSelected($event)"
+            [disabled]="importing()"
+          />
+        </label>
+        <button
+          class="btn btn-primary btn-sm"
+          (click)="importFromSheet()"
+          [disabled]="!parsedPreview() || importing()"
+        >
+          @if (importing()) {
+            <span class="spinner spinner-light"></span>
+            Importing…
+          } @else {
+            Import {{ parsedPreview()?.length ?? 0 }} Scenario(s)
+          }
+        </button>
+      </div>
+
+      @if (importError()) {
+        <div class="import-error" role="alert">
+          {{ importError() }}
+        </div>
+      }
+
+      @if (parsedPreview() && parsedPreview()!.length > 0 && !importResult()) {
+        <div class="preview-block">
+          <h4>Ready to import ({{ parsedPreview()!.length }})</h4>
+          <ul class="preview-list">
+            @for (sc of parsedPreview()!; track sc.id) {
+              <li>
+                <span class="scenario-id">{{ sc.id }}</span>
+                <span class="preview-title">{{ sc.title || '(no title)' }}</span>
+                <span class="diff-chip diff-{{ sc.difficulty || 'medium' }}">
+                  {{ sc.difficulty || 'medium' }}
+                </span>
+                <span class="preview-count">{{ sc.hiddenRequirements.length }} reqs</span>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+      @if (importResult(); as result) {
+        <div class="result-block"
+             [ngClass]="result.skipped === 0 ? 'result-ok' : 'result-partial'">
+          <h4>
+            Import complete: {{ result.created }} created,
+            {{ result.skipped }} skipped (of {{ result.total }})
+          </h4>
+          @if (result.createdItems.length > 0) {
+            <ul class="preview-list">
+              @for (item of result.createdItems; track item.id) {
+                <li>
+                  <span class="scenario-id">{{ item.id }}</span>
+                  <span class="preview-title">{{ item.title }}</span>
+                  <span class="result-tag ok">Created</span>
+                </li>
+              }
+            </ul>
+          }
+          @if (result.skippedItems.length > 0) {
+            <h5>Skipped</h5>
+            <ul class="preview-list">
+              @for (item of result.skippedItems; track item.id) {
+                <li>
+                  <span class="scenario-id">{{ item.id }}</span>
+                  <span class="result-tag bad">Skipped</span>
+                  <span class="preview-note">{{ item.reason }}</span>
+                </li>
+              }
+            </ul>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  @if (error()) {
+    <div class="error-banner" role="alert">
+      <span class="error-icon">!</span>
+      <span>{{ error() }}</span>
+      <button type="button" class="error-dismiss" (click)="error.set(null)">
+        &times;
+      </button>
+    </div>
+  }
+
+  @if (creating() || editingId()) {
+    <section class="card editor-card">
+      <div class="editor-head">
+        <h3>{{ creating() ? 'Create New Scenario' : 'Edit Scenario' }}</h3>
+        <button class="btn btn-ghost btn-sm" (click)="cancelForm()" [disabled]="saving()">
+          Cancel
+        </button>
+      </div>
+
+      @if (creating()) {
+        <div class="field">
+          <label for="sc-id">Scenario ID (lowercase, letters, numbers, dashes)</label>
+          <input
+            id="sc-id"
+            type="text"
+            [(ngModel)]="form.id"
+            placeholder="e.g. logistics-fleet"
+            [disabled]="saving()"
+          />
+        </div>
+      } @else {
+        <div class="readonly-id">
+          Editing: <strong>{{ editingId() }}</strong>
+        </div>
+      }
+
+      <div class="field">
+        <label for="sc-title">Title *</label>
+        <input id="sc-title" type="text" [(ngModel)]="form.title" placeholder="e.g. Logistics Fleet Operations System" [disabled]="saving()" />
+      </div>
+
+      <div class="field">
+        <label for="sc-desc">Description *</label>
+        <textarea id="sc-desc" [(ngModel)]="form.description" rows="3" placeholder="Short overview of the business scenario" [disabled]="saving()"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="sc-initial">Client Initial Request (opening message) *</label>
+        <textarea id="sc-initial" [(ngModel)]="form.initialRequest" rows="2" placeholder="We are growing and the current way of managing things is becoming difficult…" [disabled]="saving()"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="sc-diff">Difficulty</label>
+        <select id="sc-diff" [(ngModel)]="form.difficulty" [disabled]="saving()">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+
+      <h4 class="section-label">Hidden Requirements (8-10) *</h4>
+      <p class="hint">
+        Each requirement is a hidden need the developer must uncover through questions.
+        One per line in "evidence criteria". Minimum 8 and maximum 10.
+      </p>
+
+      @for (req of form.requirements; track $index) {
+        <div class="req-row">
+          <div class="req-row-head">
+            <span class="req-index">{{ $index + 1 }}</span>
+            <span class="req-id-chip">{{ req.id }}</span>
+            <button class="btn btn-danger btn-sm" (click)="removeRequirementRow($index)" [disabled]="saving()">
+              Remove
+            </button>
+          </div>
+          <div class="req-fields">
+            <div class="field">
+              <label>Name *</label>
+              <input type="text" [(ngModel)]="req.name" [disabled]="saving()" />
+            </div>
+            <div class="field">
+              <label>Category</label>
+              <input type="text" [(ngModel)]="req.category" [disabled]="saving()" />
+            </div>
+            <div class="field">
+              <label>Priority</label>
+              <select [(ngModel)]="req.priority" [disabled]="saving()">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="critical">Critical</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Description *</label>
+              <textarea [(ngModel)]="req.description" rows="2" [disabled]="saving()"></textarea>
+            </div>
+            <div class="field">
+              <label>Evidence Criteria (one per line)</label>
+              <textarea [(ngModel)]="req.evidence" rows="3" [disabled]="saving()"></textarea>
+            </div>
+          </div>
+        </div>
+      }
+
+      <button class="btn btn-ghost btn-sm" (click)="addRequirementRow()" [disabled]="saving() || form.requirements.length >= 10">
+        + Add Requirement
+      </button>
+
+      <h4 class="section-label">Client Persona *</h4>
+      <div class="persona-grid">
+        <div class="field">
+          <label>Role *</label>
+          <input type="text" [(ngModel)]="form.persona.role" [disabled]="saving()" />
+        </div>
+        <div class="field">
+          <label>Business Context</label>
+          <textarea [(ngModel)]="form.persona.businessContext" rows="2" [disabled]="saving()"></textarea>
+        </div>
+        <div class="field">
+          <label>Communication Style</label>
+          <input type="text" [(ngModel)]="form.persona.communicationStyle" [disabled]="saving()" />
+        </div>
+        <div class="field">
+          <label>Goals (one per line)</label>
+          <textarea [(ngModel)]="form.persona.goals" rows="3" [disabled]="saving()"></textarea>
+        </div>
+        <div class="field">
+          <label>Constraints (one per line)</label>
+          <textarea [(ngModel)]="form.persona.constraints" rows="3" [disabled]="saving()"></textarea>
+        </div>
+        <div class="field">
+          <label>Non-negotiables (one per line)</label>
+          <textarea [(ngModel)]="form.persona.nonNegotiables" rows="3" [disabled]="saving()"></textarea>
+        </div>
+        <div class="field">
+          <label>Ambiguity Points (one per line)</label>
+          <textarea [(ngModel)]="form.persona.ambiguityPoints" rows="3" [disabled]="saving()"></textarea>
+        </div>
+      </div>
+
+      <div class="editor-actions">
+        <button class="btn btn-primary" (click)="save()" [disabled]="!canSave() || saving()">
+          @if (saving()) {
+            <span class="spinner spinner-light"></span>
+            Saving…
+          } @else {
+            {{ creating() ? 'Create Scenario' : 'Save Changes' }}
+          }
+        </button>
+        <button class="btn btn-ghost" (click)="cancelForm()" [disabled]="saving()">
+          Cancel
+        </button>
+      </div>
+    </section>
+  } @else {
+    <section class="card list-card">
+      <div class="list-head">
+        <h3>All Scenarios ({{ scenarios().length }})</h3>
+      </div>
+
+      @if (scenarios().length === 0 && !loading()) {
+        <p class="empty-note">No scenarios found. Create one to get started.</p>
+      }
+
+      <div class="scenario-list">
+        @for (sc of scenarios(); track sc.id) {
+          <div class="scenario-row">
+            <div class="scenario-row-main">
+              <span class="scenario-id">{{ sc.id }}</span>
+              <span class="scenario-title">{{ sc.title }}</span>
+            </div>
+            <div class="scenario-row-meta">
+              @if (sc.difficulty) {
+                <span class="diff-chip" [ngClass]="'diff-' + sc.difficulty">
+                  {{ sc.difficulty }}
+                </span>
+              }
+              <button class="btn btn-ghost btn-sm" (click)="edit(sc.id)">
+                Edit
+              </button>
+              <button class="btn btn-danger btn-sm" (click)="remove(sc.id)">
+                Delete
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+  }
+</div>

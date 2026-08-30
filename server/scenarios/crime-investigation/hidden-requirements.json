@@ -1,0 +1,90 @@
+[
+  {
+    "id": "REQ-001",
+    "name": "Chain of Custody Tracking",
+    "description": "Every piece of physical and digital evidence needs a tamper-evident record of who collected, transferred, or accessed it and when, so it remains admissible in court.",
+    "category": "evidence-management",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks how evidence is logged and tracked from collection onward",
+      "Developer asks who has handled a specific piece of evidence"
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "name": "Cross-Case Linkage & Pattern Analysis",
+    "description": "Detectives need the ability to surface connections between cases sharing a suspect, modus operandi, location, or victim, since these links are currently missed across disconnected spreadsheets.",
+    "category": "analytics",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks whether cases can be linked by suspect, MO, or location",
+      "Developer probes about identifying repeat offenders across cases"
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "name": "Role-Based Access Control",
+    "description": "Access to case details must be restricted by role and need-to-know, so sensitive victim, informant, and investigative details aren't visible to everyone in the department.",
+    "category": "security",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks who should be able to see which parts of a case",
+      "Developer asks about restricting sensitive information by role"
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "name": "Immutable Audit Trail",
+    "description": "Every read or edit of a case file must be permanently logged with user, timestamp, and action, since this record needs to hold up as evidence of proper handling in court and audits.",
+    "category": "compliance",
+    "priority": "high",
+    "evidenceCriteria": [
+      "Developer asks about logging who accessed or changed a record and when",
+      "Developer mentions court admissibility or audit requirements"
+    ]
+  },
+  {
+    "id": "REQ-005",
+    "name": "Digital Evidence Storage with Integrity Verification",
+    "description": "Photos, videos, and forensic reports need secure storage with a way to prove the file hasn't been altered since it was uploaded (e.g. hash verification).",
+    "category": "evidence-management",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks how photos, videos, or forensic files are stored",
+      "Developer asks about proving a file hasn't been tampered with"
+    ]
+  },
+  {
+    "id": "REQ-006",
+    "name": "Case Status Workflow & Deadline Alerts",
+    "description": "Cases need to move through defined stages (open, under investigation, referred to prosecution, closed, cold) with automatic alerts before court dates or statute-of-limitations deadlines are missed.",
+    "category": "workflow",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about the stages a case moves through",
+      "Developer asks about reminders for court dates or filing deadlines"
+    ]
+  },
+  {
+    "id": "REQ-007",
+    "name": "Multi-Agency Data Sharing Controls",
+    "description": "The department occasionally needs to share specific case data with other agencies (prosecutors, neighboring departments, state databases) without exposing the full case file.",
+    "category": "collaboration",
+    "priority": "medium",
+    "evidenceCriteria": [
+      "Developer asks about sharing cases with other departments or agencies",
+      "Developer asks about integration with external or national databases"
+    ]
+  },
+  {
+    "id": "REQ-008",
+    "name": "Searchable Historical Case Archive",
+    "description": "Detectives need to search and retrieve closed and cold case files quickly, since old cases are currently buried in filing cabinets and rarely revisited even when relevant to a new case.",
+    "category": "reporting",
+    "priority": "low",
+    "evidenceCriteria": [
+      "Developer asks how old or cold case files can be searched and retrieved",
+      "Developer asks how long records are kept before archiving"
+    ]
+  }
+]
