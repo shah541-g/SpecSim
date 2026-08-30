@@ -1,5 +1,4 @@
 node_modules/
 .env
-.env.example
 frontend/node_modules
 context.txt
