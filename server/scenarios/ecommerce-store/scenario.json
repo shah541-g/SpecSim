@@ -4,5 +4,6 @@
   "initialRequest": "We sell online and we are trying to stop the whole operation from falling apart as sales grow.",
   "description": "An online store needs a more disciplined system for catalog management, orders, payments, and customer experience as volume increases.",
   "version": "1.0.0",
-  "status": "draft"
+  "status": "draft",
+  "difficulty": "medium"
 }

@@ -4,5 +4,6 @@
   "initialRequest": "We manage several properties and it is becoming a mess keeping track of tenants, maintenance, and payments.",
   "description": "A property management company needs better tracking across units, tenants, maintenance issues, and monthly payment flows as the portfolio grows.",
   "version": "1.0.0",
-  "status": "draft"
+  "status": "draft",
+  "difficulty": "medium"
 }

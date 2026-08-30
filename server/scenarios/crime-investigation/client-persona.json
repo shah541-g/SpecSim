@@ -1,0 +1,25 @@
+{
+  "role": "Head of the Criminal Investigation Division (CID)",
+  "businessContext": "Runs a CID of 40 detectives handling roughly 600 open cases at any time, ranging from theft to homicide. Case files are currently a mix of paper folders, shared spreadsheets, and emailed PDFs, making it hard to track evidence, link related cases, or produce records for court.",
+  "communicationStyle": "Formal and guarded, speaks in procedural and law-enforcement terminology, reluctant to disclose sensitive operational details until the developer earns trust.",
+  "goals": [
+    "Cut down the hours detectives spend on paperwork",
+    "Close cases faster by spotting connections between them",
+    "Pass internal and external compliance audits without scrambling"
+  ],
+  "constraints": [
+    "Fixed annual IT budget already approved, no room for scope creep",
+    "Small internal IT staff with no dedicated developers",
+    "Rollout cannot disrupt active investigations"
+  ],
+  "nonNegotiables": [
+    "Every access to a case file must be logged and traceable to a specific officer",
+    "Evidence handling must produce a chain of custody that holds up in court",
+    "Victim and informant details must be restricted on a strict need-to-know basis"
+  ],
+  "ambiguityPoints": [
+    "Whether the system must integrate with the state/national crime database is still under internal review",
+    "Undecided whether patrol officers get read access or only detectives",
+    "Retention period for closed and cold case records has not been finalized"
+  ]
+}

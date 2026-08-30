@@ -90,6 +90,35 @@ h1, h2, h3 {
   font-weight: 400;
   font-style: italic;
 }
+.view-toggle {
+  display: inline-flex;
+  gap: 0;
+  border: 3px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: auto;
+}
+.toggle-btn {
+  background: #fff;
+  border: none;
+  color: var(--text-muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.toggle-btn + .toggle-btn {
+  border-left: 3px solid var(--border);
+}
+.toggle-btn:hover {
+  background: var(--surface-soft);
+}
+.toggle-btn.active {
+  background: var(--primary);
+  color: #fff;
+}
 
 /* ---------- Error banner ---------- */
 .error-banner {
@@ -178,26 +207,105 @@ h1, h2, h3 {
 }
 
 /* ---------- Welcome ---------- */
-.welcome-card {
-  max-width: 560px;
-  margin: 40px auto;
-  text-align: center;
-  padding: 44px 32px;
-}
 .welcome-icon {
   font-size: 2.6rem;
   margin-bottom: 8px;
 }
-.welcome-card h2 {
-  font-size: 1.6rem;
-  margin: 0 0 12px;
+
+/* ---------- Welcome screen (difficulty + scenario selection) ---------- */
+.welcome-screen {
+  max-width: 760px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.welcome-title {
+  text-align: center;
+}
+.welcome-title .welcome-icon {
+  margin-bottom: 8px;
+}
+.welcome-title h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
   letter-spacing: -0.01em;
 }
-.welcome-card p {
+.welcome-title p {
   color: var(--text-muted);
   line-height: 1.6;
-  margin: 0 0 26px;
+  margin: 0 auto;
+  max-width: 560px;
   font-family: "JetBrains Mono", monospace;
+}
+.difficulty-picker {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.diff-pill {
+  border: 3px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text-muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 24px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 rgba(43, 26, 26, 0.2);
+  transition: transform 0.08s, background 0.15s, color 0.15s;
+}
+.diff-pill:not(:disabled):active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 rgba(43, 26, 26, 0.2);
+}
+.diff-pill.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary-dark);
+}
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+.scenario-pick {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  background: var(--surface);
+  border: 4px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 18px;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  transition: transform 0.08s, border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.scenario-pick:hover {
+  border-color: var(--primary);
+}
+.scenario-pick.selected {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  box-shadow: 6px 6px 0 rgba(185, 28, 28, 0.25);
+}
+.pick-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+}
+.pick-desc {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.welcome-actions {
+  display: flex;
+  justify-content: center;
 }
 
 /* ---------- Scenario ---------- */
@@ -575,6 +683,15 @@ h1, h2, h3 {
 .req-id {
   font-weight: 600;
   font-size: 0.95rem;
+}
+.req-name {
+  font-weight: 700;
+  font-size: 1rem;
+}
+.req-name-desc {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 .req-evidence {
   margin: 0;

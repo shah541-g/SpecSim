@@ -9,6 +9,22 @@
       <p class="tagline">
         Practice discovering what your client actually needs
       </p>
+      <nav class="view-toggle" aria-label="View mode">
+        <button
+          class="toggle-btn"
+          [ngClass]="{ active: viewMode() === 'practice' }"
+          (click)="switchView('practice')"
+        >
+          Practice
+        </button>
+        <button
+          class="toggle-btn"
+          [ngClass]="{ active: viewMode() === 'manage' }"
+          (click)="switchView('manage')"
+        >
+          Manage Scenarios
+        </button>
+      </nav>
     </div>
   </header>
 
@@ -24,28 +40,70 @@
   }
 
   <main class="app-main">
-    @if (!sessionId()) {
+    @if (viewMode() === 'manage') {
+      <app-scenario-manager></app-scenario-manager>
+    } @else {
+      @if (!sessionId()) {
       <!-- Welcome / start screen -->
-      <section class="card welcome-card">
-        <div class="welcome-icon">👋</div>
-        <h2>Ready to interview your client?</h2>
-        <p>
-          You'll play the role of a developer gathering requirements. Ask
-          clarifying questions to uncover what this client truly needs, then
-          end the session to see how well you did.
-        </p>
-        <button
-          class="btn btn-primary btn-lg"
-          (click)="startSession()"
-          [disabled]="loading()"
-        >
-          @if (loading()) {
-            <span class="spinner spinner-light"></span>
-            Starting…
-          } @else {
-            Start New Session
+      <section class="welcome-screen">
+        <div class="welcome-title">
+          <div class="welcome-icon"><i class="bi bi-chat-left-dots"></i></div>
+          <h2>Ready to interview your client?</h2>
+          <p>
+            Pick a difficulty, choose a scenario, and interview the client to
+            uncover what they truly need. End the session to see how well you did.
+          </p>
+        </div>
+
+        <div class="difficulty-picker" aria-label="Choose difficulty">
+          @for (level of difficulties; track level) {
+            <button
+              class="diff-pill"
+              [ngClass]="{ active: difficulty() === level }"
+              (click)="setDifficulty(level)"
+            >
+              {{ level | titlecase }}
+            </button>
           }
-        </button>
+        </div>
+
+        <div class="scenario-grid">
+          @if (scenariosLoading()) {
+            <p class="empty-note">Loading scenarios…</p>
+          } @else if (filteredScenarios().length === 0) {
+            <p class="empty-note">
+              No scenarios available at the {{ difficulty() | titlecase }} level.
+            </p>
+          } @else {
+            @for (sc of filteredScenarios(); track sc.id) {
+              <button
+                class="scenario-pick"
+                [ngClass]="{ selected: selectedScenarioId() === sc.id }"
+                (click)="selectScenario(sc.id)"
+              >
+                <span class="pick-title">{{ sc.title }}</span>
+                @if (sc.description) {
+                  <span class="pick-desc">{{ sc.description }}</span>
+                }
+              </button>
+            }
+          }
+        </div>
+
+        <div class="welcome-actions">
+          <button
+            class="btn btn-primary btn-lg"
+            (click)="startSession()"
+            [disabled]="loading() || !selectedScenarioId()"
+          >
+            @if (loading()) {
+              <span class="spinner spinner-light"></span>
+              Starting…
+            } @else {
+              Start Interview
+            }
+          </button>
+        </div>
       </section>
     } @else {
       <div class="layout">
@@ -167,6 +225,12 @@
                       </span>
                       <div class="req-content">
                         <span class="req-id">{{ req.id }}</span>
+                        @if (req.requirementName) {
+                          <span class="req-name">{{ req.requirementName }}</span>
+                        }
+                        @if (req.requirementDescription) {
+                          <span class="req-name-desc">{{ req.requirementDescription }}</span>
+                        }
                         @if (req.evidence) {
                           <p class="req-evidence">“{{ req.evidence }}”</p>
                         }
@@ -211,7 +275,8 @@
             </div>
           </section>
         }
-      </div>
+        </div>
+      }
     }
   </main>
 </div>

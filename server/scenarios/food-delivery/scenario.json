@@ -4,5 +4,6 @@
   "initialRequest": "We need a food delivery setup that can handle orders, courier coordination, and a growing volume without everything going wrong at peak time.",
   "description": "A food delivery business needs an operational system to manage orders, restaurant coordination, drivers, and customer experience during busy periods.",
   "version": "1.0.0",
-  "status": "draft"
+  "status": "draft",
+  "difficulty": "hard"
 }
