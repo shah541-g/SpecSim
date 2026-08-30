@@ -39,23 +39,35 @@ unsupported assumptions, and a question-quality score.
 ```mermaid
 flowchart TD
     GT["Scenario Ground Truth: deterministic hidden-requirement matrix (8-10 reqs, ids, categories, priorities, evidence criteria) stored as static JSON per scenario"]
-
     CA["Client Agent (LLM)"]
+    noteCA["memory: reads full transcript each turn"]
+    DEV["Developer asks questions / client answers"]
     EV["Evaluator Agent (LLM)"]
+    noteEV["independent judgment: single call, no shared state with CA"]
+    OUT["Structured evaluation output: coverageScore, per-requirement status, unsupportedAssumptions, questionQuality, feedback, evaluationMode"]
+
+    subgraph SESSION["Live conversation session"]
+        CA -->|"reply"| DEV
+        DEV -->|"transcript"| CA
+        noteCA ~~~ CA
+    end
 
     GT -->|"need-to-know natural-language facts only (never the matrix, never requirement IDs)"| CA
     GT -->|"full matrix + evaluation rubric"| EV
 
-    subgraph SESSION["Live conversation session"]
-        CA -->|"client reply"| CHAT["Developer asks questions / client answers"]
-        CHAT -->|"transcript"| CA
-    end
-
-    CHAT -->|"full transcript"| EV
-    EV -->|"structured evaluation JSON"| OUT["Structured evaluation output: coverageScore, per-requirement status, unsupportedAssumptions, questionQuality, feedback, evaluationMode"]
-
-    CA -.->|"memory: reads full transcript each turn"| CA
+    SESSION -->|"full transcript"| EV
     EV -.->|"independent judgment: single call, no shared state with CA"| EV
+    noteEV ~~~ EV
+    EV -->|"evaluation"| OUT
+
+    style GT fill:#EDE7F6,stroke:#9575CD,stroke-width:2px
+    style CA fill:#FFF9C4,stroke:#F0C040,stroke-width:2px
+    style noteCA fill:#FFF9C4,stroke:#F0D060,stroke-width:1px
+    style DEV fill:#FFF9C4,stroke:#F0C040,stroke-width:2px
+    style EV fill:#EDE7F6,stroke:#9575CD,stroke-width:2px
+    style noteEV fill:#EDE7F6,stroke:#9575CD,stroke-width:1px
+    style OUT fill:#EDE7F6,stroke:#9575CD,stroke-width:2px
+    style SESSION fill:#FFF8E1,stroke:#F0C040,stroke-width:2px
 ```
 
 What makes each agent *agentic*:
